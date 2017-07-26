@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="tests" thread-count="2">
+<listeners>
+    <listener class-name="com.lsmnow.www.driver.DriverListener"></listener>
+</listeners>
+	 <test name="LSMNow Intl">
+	    <parameter name="browser" value="Google Chrome"/>
+		<parameter name="username" value="InternationalLSMNow@gmail.com" />
+		<parameter name="password" value="RockStar01" />
+		<parameter name="URL" value="http://lsmnow.com/login.aspx" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <!-- class name="com.lsmnow.www.desktoptests.Rendering"/ -->
+		    <class name="com.lsmnow.www.desktoptests.TestScript"/>  
+		</classes>
+	</test>
+	<test name="LSMNow Admin1">
+	    <parameter name="browser" value="Firefox"/>
+		<parameter name="username" value="CorporateLSMNow@outlook.com" />
+		<parameter name="password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/login.aspx" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <!-- class name="com.lsmnow.www.desktoptests.Rendering"/ -->
+		    <class name="com.lsmnow.www.desktoptests.TestScript"/>  
+		</classes>
+	</test>
+</suite>

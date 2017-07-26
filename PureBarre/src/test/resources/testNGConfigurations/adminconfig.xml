@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="classes" thread-count="1">
+ 	 <test name="LSMNow Admin">
+	    <parameter name="browser" value="Google Chrome"/>
+		<parameter name="Username" value="TraditionalLSMNow@gmail.com" />
+		<parameter name="Password" value="RockStar01" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+      		<class name="com.lsmnow.www.admin.AdminMain"/>  
+		<!--    	<class name="com.lsmnow.www.admin.Templates"/> 
+	  		<class name="com.lsmnow.www.admin.TemplateIDs"/> -->
+            <!--  <class name="com.lsmnow.www.admin.RelatedTemplateItems"/> 
+            <class name="com.lsmnow.www.admin.BackgroundNamesHeadlines"/>  -->
+	<!--    <class name="com.lsmnow.www.admin.ImageGalleryNames"/>  --> 
+	<!--    <class name="com.lsmnow.www.admin.ProductTypes"/>	   -->   
+		</classes>
+	</test> 
+ 	<!-- <test name="LSMNow Corporate">
+        <parameter name="browser" value="Google Chrome"/>
+		<parameter name="Username" value="CorporateLSMNow@outlook.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+	<test name="LSMNow Vendor">
+	    <parameter name="browser" value="Google Chrome"/>
+		<parameter name="Username" value="Vendorhd@zadv.com" /> 
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+	<test name="LSMNow Franchisee">
+	    <parameter name="browser" value="Google Chrome"/>
+		<parameter name="Username" value="Franchiseehd@zadv.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+	<test name="LSMNow Manager">
+	    <parameter name="browser" value="Google Chrome"/>
+		<parameter name="Username" value="Managerhd@zadv.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+	<test name="LSMNow Field">
+	    <parameter name="browser" value="Google Chrome"/>
+		<parameter name="Username" value="FieldLSMNow@outlook.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test> -->
+<!-- 	<test name="LSMNow Traditional">
+	    <parameter name="browser" value="Google Chrome"/>
+		<parameter name="Username" value="TraditionalLSMNow@gmail.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/traditional/login.aspx" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		   <class name="com.lsmnow.www.domestic.OrderPage"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+	 		<class name="com.lsmnow.www.domestic.MainNavigation"/>
+	 		<class name="com.lsmnow.www.traditional.PlaceHolder" />
+		    <class name="com.lsmnow.www.domestic.MainLogin"/>
+			<class name="com.lsmnow.www.domestic.Register"/> 
+			<class name="com.lsmnow.www.domestic.ForgotPassword"/>
+			<class name="com.lsmnow.www.domestic.Testing"/  
+		</classes>
+	</test> -->
+<!-- 	<test name="LSMNow International">
+		<parameter name="browser" value="Google Chrome"/>
+		<parameter name="Username" value="internationalhd@zadv.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		   	<class name="com.lsmnow.www.domestic.OrderPage"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+	 		<class name="com.lsmnow.www.domestic.MainNavigation"/>
+	 		<class name="com.lsmnow.www.domestic.MainLogin"/>
+			<class name="com.lsmnow.www.domestic.Register"/> 
+			<class name="com.lsmnow.www.domestic.ForgotPassword"/>
+			<class name="com.lsmnow.www.domestic.Testing"/>  
+		</classes>
+	</test> -->
+<!-- 	<test name="LSMNow Admin - Firefox">
+	    <parameter name="browser" value="Firefox"/>
+		<parameter name="Username" value="lsmnow@zadv.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test> -->
+ <!--     <test name="LSMNow Corporate - Firefox">
+       <parameter name="browser" value="Firefox"/>
+		<parameter name="Username" value="CorporateLSMNow@outlook.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+	<test name="LSMNow Vendor - Firefox">
+	    <parameter name="browser" value="Firefox"/>
+		<parameter name="Username" value="Vendorhd@zadv.com" /> 
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+	<test name="LSMNow Franchisee - Firefox">
+	    <parameter name="browser" value="Firefox"/>
+		<parameter name="Username" value="Franchiseehd@zadv.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://www.lsmnow.com" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+	<test name="LSMNow Manager - Firefox">
+	    <parameter name="browser" value="Firefox"/>
+		<parameter name="Username" value="Managerhd@zadv.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+	<test name="LSMNow Traditional - Firefox">
+	    <parameter name="browser" value="Firefox"/>
+		<parameter name="Username" value="TraditionalLSMNow@gmail.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/traditional/login.aspx" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		   <class name="com.lsmnow.www.domestic.OrderPage"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+	 		<class name="com.lsmnow.www.domestic.MainNavigation"/>
+	 		<class name="com.lsmnow.www.traditional.PlaceHolder" />
+		    <class name="com.lsmnow.www.domestic.MainLogin"/>
+			<class name="com.lsmnow.www.domestic.Register"/> 
+			<class name="com.lsmnow.www.domestic.ForgotPassword"/>
+			<class name="com.lsmnow.www.domestic.Testing"/  
+		</classes>
+	</test>
+	<test name="LSMNow Field - Firefox">
+	    <parameter name="browser" value="Firefox"/>
+		<parameter name="Username" value="FieldLSMNow@outlook.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+	<test name="LSMNow International - Firefox">
+		<parameter name="browser" value="Firefox"/>
+		<parameter name="Username" value="internationalhd@zadv.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		   	<class name="com.lsmnow.www.domestic.OrderPage"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+	 		<class name="com.lsmnow.www.domestic.MainNavigation"/>
+	 		<class name="com.lsmnow.www.domestic.MainLogin"/>
+			<class name="com.lsmnow.www.domestic.Register"/> 
+			<class name="com.lsmnow.www.domestic.ForgotPassword"/>
+			<class name="com.lsmnow.www.domestic.Testing"/>  
+		</classes>
+	</test> -->
+	<!-- <test name="LSMNow Admin">
+	    <parameter name="browser" value="Internet Explorer"/>
+		<parameter name="Username" value="lsmnow@zadv.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+ 	<test name="LSMNow Corporate">
+        <parameter name="browser" value="Internet Explorer"/>
+		<parameter name="Username" value="CorporateLSMNow@outlook.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+	<test name="LSMNow Vendor">
+	    <parameter name="browser" value="Internet Explorer"/>
+		<parameter name="Username" value="Vendorhd@zadv.com" /> 
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+	<test name="LSMNow Franchisee">
+	    <parameter name="browser" value="Internet Explorer"/>
+		<parameter name="Username" value="Franchiseehd@zadv.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+	<test name="LSMNow Manager">
+	    <parameter name="browser" value="Internet Explorer"/>
+		<parameter name="Username" value="Managerhd@zadv.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test>
+	<test name="LSMNow Field">
+	    <parameter name="browser" value="Internet Explorer"/>
+		<parameter name="Username" value="FieldLSMNow@outlook.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		    <class name="com.lsmnow.www.domestic.ForgotPassword"/>
+		    <class name="com.lsmnow.www.domestic.HomePage"/>
+			<class name="com.lsmnow.www.domestic.MainLogin"/>
+		    <class name="com.lsmnow.www.domestic.MainNavigation"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+ 		    <class name="com.lsmnow.www.domestic.OrderPage"/>
+		</classes>
+	</test> -->
+<!-- 	<test name="LSMNow Traditional">
+	    <parameter name="browser" value="Internet Explorer"/>
+		<parameter name="Username" value="TraditionalLSMNow@gmail.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/traditional/login.aspx" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		   <class name="com.lsmnow.www.domestic.OrderPage"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+	 		<class name="com.lsmnow.www.domestic.MainNavigation"/>
+	 		<class name="com.lsmnow.www.traditional.PlaceHolder" />
+		    <class name="com.lsmnow.www.domestic.MainLogin"/>
+			<class name="com.lsmnow.www.domestic.Register"/> 
+			<class name="com.lsmnow.www.domestic.ForgotPassword"/>
+			<class name="com.lsmnow.www.domestic.Testing"/  
+		</classes>
+	</test> -->
+<!-- 	<test name="LSMNow International">
+		<parameter name="browser" value="Internet Explorer"/>
+		<parameter name="Username" value="internationalhd@zadv.com" />
+		<parameter name="Password" value="RockStar00" />
+		<parameter name="URL" value="http://107.21.201.249/" />
+		<parameter name="DMA" value="999" />
+		<parameter name="PC" value="999999" />
+		<classes>
+		   	<class name="com.lsmnow.www.domestic.OrderPage"/>
+			<class name="com.lsmnow.www.domestic.UploadArtwork"/>
+	 		<class name="com.lsmnow.www.domestic.MainNavigation"/>
+	 		<class name="com.lsmnow.www.domestic.MainLogin"/>
+			<class name="com.lsmnow.www.domestic.Register"/> 
+			<class name="com.lsmnow.www.domestic.ForgotPassword"/>
+			<class name="com.lsmnow.www.domestic.Testing"/>  
+		</classes>
+	</test> -->
+</suite> 
