@@ -31,7 +31,6 @@ public class FreeWeekFormActions extends ParameterManager {
 		setBrowser(browser);
 	}
 	
-	
 	public void ReadData() throws IOException {
 		FreeWeekObjects.button_FreeWeek().click();
 		File src = new File(Constants.File);
