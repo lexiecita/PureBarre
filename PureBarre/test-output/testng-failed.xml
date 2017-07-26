@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.purebarre.www.driver.WebDriverListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="browser" value="Google Chrome"/>
     <classes>
       <class name="com.purebarre.www.dataaction.SignInAction">
         <methods>
           <include name="ReadData"/>
-          <include name="TestSetup"/>
         </methods>
       </class> <!-- com.purebarre.www.dataaction.SignInAction -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

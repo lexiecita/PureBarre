@@ -1,54 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11383" started-at="2017-07-18T13:20:15Z" finished-at="2017-07-18T13:20:27Z">
+  <suite name="Suite" duration-ms="13315" started-at="2017-07-25T10:28:27Z" finished-at="2017-07-25T10:28:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11383" started-at="2017-07-18T13:20:15Z" finished-at="2017-07-18T13:20:27Z">
-      <class name="com.purebarre.www.dataaction.SignInAction">
-        <test-method status="PASS" signature="TestSetup()[pri:0, instance:com.purebarre.www.dataaction.SignInAction@25a65b77]" name="TestSetup" is-config="true" duration-ms="11336" started-at="2017-07-18T09:20:15Z" finished-at="2017-07-18T09:20:27Z">
+    <test name="Test" duration-ms="13315" started-at="2017-07-25T10:28:27Z" finished-at="2017-07-25T10:28:40Z">
+      <class name="com.purebarre.www.datatests.FreeWeekTests">
+        <test-method status="PASS" signature="FreeWeekForm()[pri:0, instance:com.purebarre.www.datatests.FreeWeekTests@157632c9]" name="FreeWeekForm" duration-ms="12029" started-at="2017-07-25T06:28:27Z" finished-at="2017-07-25T06:28:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestSetup -->
-        <test-method status="FAIL" signature="ReadData()[pri:0, instance:com.purebarre.www.dataaction.SignInAction@25a65b77]" name="ReadData" duration-ms="18" started-at="2017-07-18T09:20:27Z" finished-at="2017-07-18T09:20:27Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at pageObjects.DataDrivenObjects.button_TryAFreeWeek(DataDrivenObjects.java:13)
-	at com.purebarre.www.dataaction.SignInAction.ReadData(SignInAction.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReadData -->
-      </class> <!-- com.purebarre.www.dataaction.SignInAction -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- FreeWeekForm -->
+      </class> <!-- com.purebarre.www.datatests.FreeWeekTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

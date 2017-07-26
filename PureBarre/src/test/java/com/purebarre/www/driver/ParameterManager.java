@@ -64,7 +64,7 @@ public class ParameterManager {
 	}
 
 	public String getDriverHash() {
-		return "<br>Hash: " + DriverManager.getDriver().hashCode();
+		return "<br>Hash: " + Manager.getDriver().hashCode();
 	}
 
 }

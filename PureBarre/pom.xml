@@ -6,7 +6,7 @@
   <artifactId>PureBarre</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-
+  
   <name>PureBarre</name>
   <url>http://maven.apache.org</url>
 
@@ -41,5 +41,12 @@
       <artifactId>extentreports</artifactId>
       <version>2.41.2</version>
      </dependency>
+     <dependency>
+  	   <groupId>org.testng</groupId>
+       <artifactId>testng</artifactId>
+       <version>6.10</version>
+       <scope>test</scope>
+	 </dependency>
+     
   </dependencies>
 </project>

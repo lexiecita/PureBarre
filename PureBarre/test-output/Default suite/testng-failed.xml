@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.purebarre.www.dataaction.SignInAction">
+      <class name="com.purebarre.www.datatests.FreeWeekTests">
         <methods>
-          <include name="ReadData"/>
-          <include name="TestSetup"/>
+          <include name="FreeWeekForm"/>
         </methods>
-      </class> <!-- com.purebarre.www.dataaction.SignInAction -->
+      </class> <!-- com.purebarre.www.datatests.FreeWeekTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

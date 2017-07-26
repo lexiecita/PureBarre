@@ -16,7 +16,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.purebarre.www.driver.DriverManager;
+import com.purebarre.www.driver.Manager;
 
 public final class SeleniumUtils {
 
@@ -26,49 +26,49 @@ public final class SeleniumUtils {
 
 	// Method will generate a screenshot in the form of a file and save to the Screenshots folder in test-output
 	public static void takeScreenshot(final String browser, final String screenshotName) throws IOException {
-		final File screenshot = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
+		final File screenshot = ((TakesScreenshot) Manager.getDriver()).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshot,
 				new File("../LSMNow/test-output/Reports/Screenshots/" + browser + " - "
-						+ DriverManager.getDriver().hashCode() + " - " + screenshotName + ".png"));
+						+ Manager.getDriver().hashCode() + " - " + screenshotName + ".png"));
 	}
 
 	// Method will generate and return the path of an existing screenshot to add to the HTML Report
 	public static String addScreenShotPathToReport(final String browser, final String screenshotName) {
-		final String imagePath = "./Screenshots/" + browser + " - " + DriverManager.getDriver().hashCode() + " - "
+		final String imagePath = "./Screenshots/" + browser + " - " + Manager.getDriver().hashCode() + " - "
 				+ screenshotName + ".png";
 		return imagePath;
 	}
 
 	// Method will switch to a frame by extracting the name attribute from an iframe based on an xpath locator
 	public static void switchToFrameByName(final String frameXPath) {
-		final String frame = DriverManager.getDriver().findElement(By.xpath(frameXPath)).getAttribute("name");
-		DriverManager.getDriver().switchTo().frame(frame);
+		final String frame = Manager.getDriver().findElement(By.xpath(frameXPath)).getAttribute("name");
+		Manager.getDriver().switchTo().frame(frame);
 	}
 
 	// Method will switch to a frame by extracting the id attribute in the iframe based on an xpath locator
 	public static void switchToFrameByIDContains(final String frameXPath) {
-		final String frame = DriverManager.getDriver().findElement(By.xpath(frameXPath)).getAttribute("id");
-		DriverManager.getDriver().switchTo().frame(frame);
+		final String frame = Manager.getDriver().findElement(By.xpath(frameXPath)).getAttribute("id");
+		Manager.getDriver().switchTo().frame(frame);
 	}
 
 	// Method will switch to a frame by using the id attribute in the iframe
 	public static void switchToFrameByID(final String id) {
-		DriverManager.getDriver().switchTo().frame(id);
+		Manager.getDriver().switchTo().frame(id);
 	}
 
 	// Method will switch to an alert by using the Alert Interface and accept alert
 	public static void alert() throws InterruptedException {
-		final WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 5);
+		final WebDriverWait wait = new WebDriverWait(Manager.getDriver(), 5);
 		wait.until(ExpectedConditions.alertIsPresent());
-		final Alert alert = DriverManager.getDriver().switchTo().alert();
+		final Alert alert = Manager.getDriver().switchTo().alert();
 		alert.accept();
 	}
 
 	// Method will get text from alert and accept the alert
 	public static String getAlertText() throws InterruptedException {
-		final WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 5);
+		final WebDriverWait wait = new WebDriverWait(Manager.getDriver(), 5);
 		wait.until(ExpectedConditions.alertIsPresent());
-		final Alert alert = DriverManager.getDriver().switchTo().alert();
+		final Alert alert = Manager.getDriver().switchTo().alert();
 		final String alertText = alert.getText();
 		alert.accept();
 		return alertText;
@@ -85,20 +85,20 @@ public final class SeleniumUtils {
 
 	// Method will execute javascript to scroll to a specific element on the page located by a xpath expression
 	public static void scrollToElement(final String xpath) {
-		((JavascriptExecutor) DriverManager.getDriver()).executeScript("arguments[0].scrollIntoView(true);",
-				DriverManager.getDriver().findElement(By.xpath(xpath)));
+		((JavascriptExecutor) Manager.getDriver()).executeScript("arguments[0].scrollIntoView(true);",
+				Manager.getDriver().findElement(By.xpath(xpath)));
 	}
 
 	// Method will execute javascript to inject a geolocation in the browser
 	public static void injectGeoLocation(final String latitude, final String longitude) {
-		((JavascriptExecutor) DriverManager.getDriver()).executeScript(
+		((JavascriptExecutor) Manager.getDriver()).executeScript(
 				"window.navigator.geolocation.getCurrentPosition = function(success){ var position = {\"coords\" : {\"latitude\": \""
 						+ latitude + "\",\"longitude\": \"" + longitude + "\"}};success(position);}");
 	}
 
 	public static boolean invisibilityAssertByXpath(final String xpathExpression) {
 		try {
-			final WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 3);
+			final WebDriverWait wait = new WebDriverWait(Manager.getDriver(), 3);
 			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpathExpression)));
 		} catch (final Exception e) {
 			return false;
@@ -108,7 +108,7 @@ public final class SeleniumUtils {
 
 	public static boolean visibilityAssertBy(final By locator) {
 		try {
-			final WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 5);
+			final WebDriverWait wait = new WebDriverWait(Manager.getDriver(), 5);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		} catch (final Exception e) {
 			return false;
@@ -118,7 +118,7 @@ public final class SeleniumUtils {
 
 	public static boolean visibilityAssertBy(final WebElement element) {
 		try {
-			final WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 5);
+			final WebDriverWait wait = new WebDriverWait(Manager.getDriver(), 5);
 			wait.until(ExpectedConditions.visibilityOf(element));
 		} catch (final Exception e) {
 			return false;
@@ -128,7 +128,7 @@ public final class SeleniumUtils {
 
 	public static boolean elementClickableAssert(final WebElement element) {
 		try {
-			final WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 5);
+			final WebDriverWait wait = new WebDriverWait(Manager.getDriver(), 5);
 			wait.until(ExpectedConditions.elementToBeClickable(element));
 		} catch (final Exception e) {
 			return false;
