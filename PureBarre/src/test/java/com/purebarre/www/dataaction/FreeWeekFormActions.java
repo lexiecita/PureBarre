@@ -11,9 +11,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.purebarre.www.driver.Constants;
+import com.purebarre.www.driver.Manager;
 import com.purebarre.www.driver.ParameterManager;
 import com.purebarre.www.objects.FreeWeekObjects;
-
+import com.purebarre.www.utils.WaitTypes;
 
 public class FreeWeekFormActions extends ParameterManager {
 
@@ -30,11 +31,13 @@ public class FreeWeekFormActions extends ParameterManager {
 	public FreeWeekFormActions(final String browser) {
 		setBrowser(browser);
 	}
-	
+
 	public void ReadData() throws IOException {
+		final WaitTypes wait = new WaitTypes(Manager.getDriver());
+		wait.waitForElement(FreeWeekObjects.button_FreeWeek(), 5);
 		FreeWeekObjects.button_FreeWeek().click();
-		File src = new File(Constants.File);
-		FileInputStream finput = new FileInputStream(src);
+		final File src = new File(Constants.File);
+		final FileInputStream finput = new FileInputStream(src);
 		workbook = new XSSFWorkbook(finput);
 		sheet = workbook.getSheetAt(0);
 		for (int i = 1; i < sheet.getLastRowNum(); i++) {
@@ -50,13 +53,3 @@ public class FreeWeekFormActions extends ParameterManager {
 		}
 	}
 }
-
-
-
-
-
-
-	
-	
-
-
