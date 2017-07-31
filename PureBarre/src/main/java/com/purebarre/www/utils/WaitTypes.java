@@ -1,5 +1,6 @@
 package com.purebarre.www.utils;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,7 +19,7 @@ public class WaitTypes {
 		try {
 			System.out.println("Waiting for max:: " + timeout + " second for element to be available");
 			final WebDriverWait wait = new WebDriverWait(driver, 3);
-			element = wait.until(ExpectedConditions.visibilityOfElementLocated(webElement));
+			element = wait.until(ExpectedConditions.visibilityOfElementLocated((By) webElement));
 			System.out.println("Element appear on the web page");
 		} catch (final Exception e) {
 			System.out.println("Element did not appear on webpage");

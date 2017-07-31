@@ -7,7 +7,7 @@
 	<test name="Test">
 		<parameter name="browser" value="Google Chrome"/>
 		<classes>
-			<class name="com.purebarre.www.datatests.FreeWeekTests"></class>
+			<class name="com.purebarre.www.datatests.NavigationTests"></class>
 		</classes>
 	</test>
 </suite>

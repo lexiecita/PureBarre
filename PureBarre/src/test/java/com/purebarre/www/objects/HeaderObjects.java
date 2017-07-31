@@ -36,14 +36,35 @@ public class HeaderObjects {
 		return element;
 	}
 
+	public static WebElement link_TheExperience() {
+		element = Manager.getDriver()
+				.findElement(By.xpath("(//ul[@class='menu']//a[text()='The Experience'])[1]"));
+		return element;
+	}
+	
 	public static WebElement link_Locations() {
 		element = Manager.getDriver()
-				.findElement(By.xpath("//ul[@class='menu']//a[text()='Locations']"));
+				.findElement(By.xpath("(//ul[@class='menu']//li[@id='menu-item-92']//a[text()='Locations'])[1]"));
 		return element;
 	}
 
-	public static WebElement link_TheExperience() {
-		element = Manager.getDriver().findElement(By.xpath("//ul[@class='menu']//a[text()='The Experience']"));
+	public static WebElement link_NewToPureBarre() {
+		element = Manager.getDriver().findElement(By.xpath("//ul[@class='sub-menu']//a[contains(text(), 'new to pure barre')]"));
+		return element;
+	}
+	
+	public static WebElement link_AboutOurTechnique() {
+		element = Manager.getDriver().findElement(By.xpath("//ul[@class='sub-menu']//a[contains(text(), 'About Our Technique')]"));
+		return element;
+	}
+	
+	public static WebElement link_PureFoundations() {
+		element = Manager.getDriver().findElement(By.xpath("//ul[@class='sub-menu']//a[contains(text(), 'Pure Foundations')]"));
+		return element;
+	}
+	
+	public static WebElement link_SpecialtyClasses() {
+		element = Manager.getDriver().findElement(By.xpath("//ul[@class='sub-menu']//a[contains(text(), 'Speciality Classes')]"));
 		return element;
 	}
 
@@ -53,12 +74,12 @@ public class HeaderObjects {
 	}
 
 	public static WebElement link_Blog() {
-		element = Manager.getDriver().findElement(By.xpath("//ul[@class='menu']//a[text()='Blog']"));
+		element = Manager.getDriver().findElement(By.xpath("(//ul[@class='menu']//a[text()='Blog'])[1]"));
 		return element;
 	}
 
 	public static WebElement link_Shop() {
-		element = Manager.getDriver().findElement(By.xpath("//ul[@class='menu']//a[text()='Shop']"));
+		element = Manager.getDriver().findElement(By.xpath("(//ul[@class='menu']//a[text()='Shop'])[1]"));
 		return element;
 	}
 
@@ -68,7 +89,7 @@ public class HeaderObjects {
 	}
 
 	public static WebElement link_OwnAStudio() {
-		element = Manager.getDriver().findElement(By.xpath("//ul[@class='menu']//a[text()='Own a Studio']"));
+		element = Manager.getDriver().findElement(By.xpath("(//ul[@class='menu']//a[text()='Own a Studio'])[1]"));
 		return element;
 	}
 
