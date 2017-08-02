@@ -38,7 +38,7 @@ public class HeaderObjects {
 
 	public static WebElement link_TheExperience() {
 		element = Manager.getDriver()
-				.findElement(By.xpath("(//ul[@class='menu']//a[text()='The Experience'])[1]"));
+				.findElement(By.xpath("//li[@id='menu-item-12592']/a"));
 		return element;
 	}
 	
@@ -54,7 +54,12 @@ public class HeaderObjects {
 	}
 	
 	public static WebElement link_AboutOurTechnique() {
-		element = Manager.getDriver().findElement(By.xpath("//ul[@class='sub-menu']//a[contains(text(), 'About Our Technique')]"));
+		element = Manager.getDriver().findElement(By.xpath("//li[@id='menu-item-12593']/a"));
+		return element;
+	}
+	
+	public static WebElement link_Classes() {
+		element = Manager.getDriver().findElement(By.xpath("//li[@id='menu-item-14087']/a"));
 		return element;
 	}
 	
@@ -64,7 +69,7 @@ public class HeaderObjects {
 	}
 	
 	public static WebElement link_SpecialtyClasses() {
-		element = Manager.getDriver().findElement(By.xpath("//ul[@class='sub-menu']//a[contains(text(), 'Speciality Classes')]"));
+		element = Manager.getDriver().findElement(By.xpath("//li[@id='menu-item-83']/a"));
 		return element;
 	}
 

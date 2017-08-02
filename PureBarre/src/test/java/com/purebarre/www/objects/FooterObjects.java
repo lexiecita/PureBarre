@@ -74,8 +74,28 @@ public class FooterObjects {
 		return element;
 	}
 	
+	public static WebElement text_SubscribeNewsletter() {
+		element = Manager.getDriver().findElement(By.xpath("(//input[@placeholder='Enter Email Address...'])[1]"));
+		return element;
+	}
+	
+	public static WebElement submit_SubscribeNewsletter() {
+		element = Manager.getDriver().findElement(By.xpath("//button[@title='Submit']"));
+		return element;
+	}
+	
 	public static WebElement link_SubscribeBlog() {
 		element = Manager.getDriver().findElement(By.xpath("//div[@class='table-cell']//a[contains(text(), 'Subscribe to Our Blog')]"));
+		return element;
+	}
+	
+	public static WebElement text_SubscribeBlog() {
+		element = Manager.getDriver().findElement(By.xpath("(//input[@placeholder='Enter Email Address...'])[2]"));
+		return element;
+	}
+	
+	public static WebElement submit_SubscribeBlog() {
+		element = Manager.getDriver().findElement(By.xpath("//input[@type='submit']"));
 		return element;
 	}
 	

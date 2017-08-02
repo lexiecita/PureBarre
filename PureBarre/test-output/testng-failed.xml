@@ -6,12 +6,25 @@
   </listeners>
   <test name="Test(failed)">
     <parameter name="browser" value="Google Chrome"/>
+    <groups>
+      <run>
+        <include name="retest"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.purebarre.www.dataaction.SignInAction">
+      <class name="com.purebarre.www.datatests.NavigationTests">
         <methods>
-          <include name="ReadData"/>
+          <include name="clickFooterLink_YouTube"/>
+          <include name="clickHeaderLink_Shop"/>
+          <include name="clickHeaderLink_OwnAStudio"/>
+          <include name="clickFooterLink_Instagram"/>
+          <include name="clickHeaderLink_Blog"/>
+          <include name="clickHeaderLink_Story"/>
+          <include name="clickFooterLink_ContactUs"/>
+          <include name="clickFooterLink_Twitter"/>
+          <include name="clickFooterLink_Facebook"/>
         </methods>
-      </class> <!-- com.purebarre.www.dataaction.SignInAction -->
+      </class> <!-- com.purebarre.www.datatests.NavigationTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

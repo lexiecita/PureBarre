@@ -6,6 +6,11 @@
 	</listeners> 
 	<test name="Test">
 		<parameter name="browser" value="Google Chrome"/>
+		<groups>
+			<run>
+				<include name="retest"/>
+			</run>
+		</groups>
 		<classes>
 			<class name="com.purebarre.www.datatests.NavigationTests"></class>
 		</classes>

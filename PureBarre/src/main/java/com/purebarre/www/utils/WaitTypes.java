@@ -26,6 +26,7 @@ public class WaitTypes {
 		}
 		return element;
 	}
+	
 
 	/*
 	 * // Private constructor to avoid instantiation of the class
