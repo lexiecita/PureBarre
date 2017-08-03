@@ -14,15 +14,11 @@
     <classes>
       <class name="com.purebarre.www.datatests.NavigationTests">
         <methods>
-          <include name="clickFooterLink_YouTube"/>
           <include name="clickHeaderLink_Shop"/>
           <include name="clickHeaderLink_OwnAStudio"/>
           <include name="clickFooterLink_Instagram"/>
           <include name="clickHeaderLink_Blog"/>
-          <include name="clickHeaderLink_Story"/>
           <include name="clickFooterLink_ContactUs"/>
-          <include name="clickFooterLink_Twitter"/>
-          <include name="clickFooterLink_Facebook"/>
         </methods>
       </class> <!-- com.purebarre.www.datatests.NavigationTests -->
     </classes>

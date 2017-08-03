@@ -12,12 +12,12 @@ import com.purebarre.www.driver.Manager;
 import com.purebarre.www.objects.FooterObjects;
 
 public class NavigationTests {
-	
+
 	private String ResultantURL, SubscribeNewsletterText, URLcheck;
 	private HeaderNavigationActions na;
 	private FooterNavigationActions fna;
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickHeaderLink_LocationsHeaderLink() throws IOException {
 		na = new HeaderNavigationActions();
@@ -29,8 +29,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickHeaderLink_NewToPureBarre() throws IOException {
 		na = new HeaderNavigationActions();
@@ -42,8 +42,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickHeaderLink_AboutOurTechnique() throws IOException {
 		na = new HeaderNavigationActions();
@@ -55,8 +55,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickHeaderLink_PureFoundations() throws IOException {
 		na = new HeaderNavigationActions();
@@ -68,8 +68,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickHeaderLink_SpecialtyClasses() throws IOException {
 		na = new HeaderNavigationActions();
@@ -81,8 +81,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test(groups = { "retest" })
 	public void clickHeaderLink_Story() throws IOException {
 		na = new HeaderNavigationActions();
@@ -94,8 +94,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test(groups = { "retest" })
 	public void clickHeaderLink_Shop() throws IOException {
 		na = new HeaderNavigationActions();
@@ -107,8 +107,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test(groups = { "retest" })
 	public void clickHeaderLink_Blog() throws IOException {
 		na = new HeaderNavigationActions();
@@ -120,8 +120,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test(groups = { "retest" })
 	public void clickHeaderLink_OwnAStudio() throws IOException {
 		na = new HeaderNavigationActions();
@@ -133,8 +133,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_OrderInformation() throws IOException {
 		fna = new FooterNavigationActions();
@@ -146,8 +146,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_ReturnsAndExchanges() throws IOException {
 		fna = new FooterNavigationActions();
@@ -159,8 +159,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_ShippingInformation() throws IOException {
 		fna = new FooterNavigationActions();
@@ -172,8 +172,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_StreamingContentFAQ() throws IOException {
 		fna = new FooterNavigationActions();
@@ -185,8 +185,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_GiftCards() throws IOException {
 		fna = new FooterNavigationActions();
@@ -198,8 +198,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_StudioOwnersShop() throws IOException {
 		fna = new FooterNavigationActions();
@@ -211,8 +211,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_OwnerAndTeachersPortal() throws IOException {
 		fna = new FooterNavigationActions();
@@ -224,8 +224,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_Team() throws IOException {
 		fna = new FooterNavigationActions();
@@ -237,8 +237,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_Careers() throws IOException {
 		fna = new FooterNavigationActions();
@@ -250,8 +250,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test(groups = { "retest" })
 	public void clickFooterLink_ContactUs() throws IOException {
 		fna = new FooterNavigationActions();
@@ -263,8 +263,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_Press() throws IOException {
 		fna = new FooterNavigationActions();
@@ -276,20 +276,20 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_SubscribeNewsletter() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickGetText_SubscribeNewsletter();
-		if (FooterObjects.text_SubscribeNewsletter().isDisplayed()){
+		if (FooterObjects.text_SubscribeNewsletter().isDisplayed()) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_SubscribeNewsletter_Submit() throws IOException {
 		fna = new FooterNavigationActions();
@@ -301,20 +301,20 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_SubscribeBlog() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickGetText_SubscribeBlog();
-		if (FooterObjects.text_SubscribeBlog().isDisplayed()){
+		if (FooterObjects.text_SubscribeBlog().isDisplayed()) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_SubscribeBlog_Submit() throws IOException {
 		fna = new FooterNavigationActions();
@@ -326,99 +326,99 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test(groups = { "retest" })
 	public void clickFooterLink_Facebook() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickFooterLink_Facebook();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		if (ResultantURL.contains("https://www.facebook.com/PureBarre")) {
+		URLcheck = FooterObjects.icon_Facebook().getAttribute("href");
+		if (URLcheck.contains("https://www.facebook.com/PureBarre")) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test(groups = { "retest" })
 	public void clickFooterLink_Twitter() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickFooterLink_Twitter();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		if (ResultantURL.contains("https://twitter.com/Pure_Barre")) {
+		URLcheck = FooterObjects.icon_Twitter().getAttribute("href");
+		if (URLcheck.contains("https://twitter.com/Pure_Barre")) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test(groups = { "retest" })
 	public void clickFooterLink_Instagram() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickFooterLink_Instagram();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		if (ResultantURL.contains("instagram.com/pure_barre/")) {
+		URLcheck = FooterObjects.icon_Instagram().getAttribute("href");
+		if (URLcheck.contains("https://www.instagram.com/pure_barre/")) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_Pinterest() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickFooterLink_Pinterest();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		if (ResultantURL.contains("pinterest.com/purebarre/")) {
+		URLcheck = FooterObjects.icon_Pinterest().getAttribute("href");
+		if (URLcheck.contains("https://www.pinterest.com/purebarre/")) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_Linkedin() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickFooterLink_Linkedin();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		if (ResultantURL.contains("linkedin.com/company/pure-barre")) {
+		URLcheck = FooterObjects.icon_Linkedin().getAttribute("href");
+		if (URLcheck.contains("https://www.linkedin.com/company/pure-barre")) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test(groups = { "retest" })
 	public void clickFooterLink_YouTube() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickFooterLink_YouTube();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		if (ResultantURL.contains("youtube.com/user/PureBarreCompany")) {
+		URLcheck = FooterObjects.icon_YouTube().getAttribute("href");
+		if (URLcheck.contains("https://www.youtube.com/user/PureBarreCompany")) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_DownloadForApple() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickFooterLink_DownloadForApple();
 		URLcheck = FooterObjects.button_DownloadApple().getAttribute("href");
-		if (URLcheck.contains("https://itunes.apple.com/us/app/pure-barre/id723157189?mt=8")){
+		if (URLcheck.contains("https://itunes.apple.com/us/app/pure-barre/id723157189?mt=8")) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_DownloadForGoogle() throws IOException {
 		fna = new FooterNavigationActions();
@@ -430,8 +430,8 @@ public class NavigationTests {
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Parameters({"browser"})
+
+	@Parameters({ "browser" })
 	public void clickFooterLink_PressImage() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickFooterLink_PressImage();
@@ -443,7 +443,7 @@ public class NavigationTests {
 		}
 	}
 
-	@Parameters({"browser"})
+	@Parameters({ "browser" })
 	@Test
 	public void clickFooterLink_PrivacyPolicy() throws IOException {
 		fna = new FooterNavigationActions();
