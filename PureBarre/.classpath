@@ -88,5 +88,19 @@
 	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/TestNG/jcommander-1.69.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/TestNG/testng-6.9.6-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/TestNG/testng-6.11.jar" sourcepath="C:/Users/Alexis/Documents/Automation/TestNG/testng-6.9.6-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/extentreports-3.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/lib/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/lib/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/lib/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/lib/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/lib/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/lib/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/lib/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/lib/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/lib/jsoup-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/lib/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/lib/mongodb-driver-core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/Documents/Automation/extentreports-java-3.0.6 (1)/extentreports-java-3.0.6/lib/testng-6.9.10.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

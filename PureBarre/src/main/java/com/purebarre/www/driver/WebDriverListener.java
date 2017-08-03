@@ -5,24 +5,34 @@ import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 public class WebDriverListener extends ParameterManager implements IInvokedMethodListener {
 
-	public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
+	ExtentReports report;
+	ExtentTest test;
+
+	public void beforeInvocation(final IInvokedMethod method, final ITestResult testResult) {
 		if (method.isTestMethod()) {
-			String browser = method.getTestMethod().getXmlTest().getLocalParameters().get("browser");
-			WebDriver driver = Factory.createInstance(browser);
+			final String browser = method.getTestMethod().getXmlTest().getLocalParameters().get("browser");
+			final WebDriver driver = Factory.createInstance(browser);
 			Manager.setWebDriver(driver);
 			driver.get(Constants.URL);
 		}
 	}
-	
-	public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
-		WebDriver driver = Manager.getDriver();
+
+	public void afterInvocation(final IInvokedMethod method, final ITestResult testResult) {
+		final WebDriver driver = Manager.getDriver();
 		if (driver != null) {
 			driver.quit();
+			report.endTest(test);
+			report.flush();
 		}
 	}
 }
 
-/*		System.setProperty(Constants.Driver, Constants.DriverPath);
-WebDriver driver = new ChromeDriver();*/
+/*
+ * System.setProperty(Constants.Driver, Constants.DriverPath);
+ * WebDriver driver = new ChromeDriver();
+ */
