@@ -11,7 +11,7 @@ public class FooterObjects {
 
 	public static WebElement link_OrderInformation() {
 		element = Manager.getDriver()
-				.findElement(By.xpath("//div[@class='table-cell']//a[contains(text(), 'Order Information')]"));
+				.findElement(By.xpath("//a[contains(text(), 'Order Information')]"));
 		return element;
 	}
 
@@ -65,12 +65,12 @@ public class FooterObjects {
 	}
 	
 	public static WebElement link_Press() {
-		element = Manager.getDriver().findElement(By.xpath("//div[@class='table='cell']//a[contains(text(), 'Press')]"));
+		element = Manager.getDriver().findElement(By.xpath("//a[contains(text(), 'Press')]"));
 		return element;
 	}
 	
 	public static WebElement link_SubscribeNewsletter() {
-		element = Manager.getDriver().findElement(By.xpath("//div[@class='table-cell']//a[contains(text(), 'Subscribe to Our Newsletter')]"));
+		element = Manager.getDriver().findElement(By.xpath("//a[contains(text(), 'Subscribe to Our Newsletter')]"));
 		return element;
 	}
 	
@@ -85,7 +85,7 @@ public class FooterObjects {
 	}
 	
 	public static WebElement link_SubscribeBlog() {
-		element = Manager.getDriver().findElement(By.xpath("//div[@class='table-cell']//a[contains(text(), 'Subscribe to Our Blog')]"));
+		element = Manager.getDriver().findElement(By.xpath("//a[contains(text(), 'Subscribe to Our Blog')]"));
 		return element;
 	}
 	

@@ -5,8 +5,8 @@ import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 
 public class WebDriverListener extends ParameterManager implements IInvokedMethodListener {
 
@@ -26,8 +26,6 @@ public class WebDriverListener extends ParameterManager implements IInvokedMetho
 		final WebDriver driver = Manager.getDriver();
 		if (driver != null) {
 			driver.quit();
-			report.endTest(test);
-			report.flush();
 		}
 	}
 }

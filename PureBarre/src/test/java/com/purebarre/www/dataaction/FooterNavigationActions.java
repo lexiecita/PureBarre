@@ -11,10 +11,6 @@ import com.purebarre.www.utils.WaitTypes;
 
 public class FooterNavigationActions extends ParameterManager {
 
-	private String ResultantURL;
-	private String SubscribeNewsletterText;
-	private String URLcheck;
-
 	public FooterNavigationActions() {
 
 	}
@@ -23,92 +19,70 @@ public class FooterNavigationActions extends ParameterManager {
 		setBrowser(browser);
 	}
 
-	public String clickFooterLink_OrderInformation() throws IOException {
+	public void clickFooterLink_OrderInformation() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_OrderInformation(), 5);
 		FooterObjects.link_OrderInformation().click();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 
-	public String clickFooterLink_ReturnsAndExchanges() throws IOException {
+	public void clickFooterLink_ReturnsAndExchanges() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_ReturnsandExchanges(), 5);
 		FooterObjects.link_ReturnsandExchanges().click();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 
-	public String clickFooterLink_ShippingInformation() throws IOException {
+	public void clickFooterLink_ShippingInformation() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_ShippingInformation(), 5);
 		FooterObjects.link_ShippingInformation().click();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 
-	public String clickFooterLink_StreamingContentFAQ() throws IOException {
+	public void clickFooterLink_StreamingContentFAQ() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_StreamingContentFAQ(), 5);
 		FooterObjects.link_StreamingContentFAQ().click();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 
-	public String clickFooterLink_GiftCards() throws IOException {
+	public void clickFooterLink_GiftCards() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_GiftCards(), 5);
 		FooterObjects.link_GiftCards().click();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 
-	public String clickFooterLink_StudioOwnersShop() throws IOException {
+	public void clickFooterLink_StudioOwnersShop() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_StudioOwnersShop(), 5);
 		FooterObjects.link_StudioOwnersShop().click();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 
-	public String clickFooterLink_OwnerAndTeachersPortal() throws IOException {
+	public void clickFooterLink_OwnerAndTeachersPortal() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_OwnerandTeachersPortal(), 5);
 		FooterObjects.link_OwnerandTeachersPortal().click();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 
-	public String clickFooterLink_Team() throws IOException {
+	public void clickFooterLink_Team() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_Team(), 5);
 		FooterObjects.link_Team().click();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 
-	public String clickFooterLink_Careers() throws IOException {
+	public void clickFooterLink_Careers() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_Careers(), 5);
 		FooterObjects.link_Careers().click();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 
-	public String clickFooterLink_ContactUs() throws IOException {
+	public void clickFooterLink_ContactUs() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
-		wait.waitForElement(FooterObjects.link_Careers(), 5);
-		FooterObjects.link_Careers().click();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
+		wait.waitForElement(FooterObjects.link_ContactUs(), 5);
+		FooterObjects.link_ContactUs().click();
 	}
 
-	public String clickFooterLink_Press() throws IOException {
+	public void clickFooterLink_Press() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_Press(), 5);
 		FooterObjects.link_Press().click();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 
 	public void clickGetText_SubscribeNewsletter() throws IOException {
@@ -118,14 +92,12 @@ public class FooterNavigationActions extends ParameterManager {
 		actions.moveToElement(FooterObjects.link_SubscribeNewsletter()).click().perform();
 	}
 
-	public String click_SubscribeNewsletter_Submit() throws IOException {
+	public void click_SubscribeNewsletter_Submit() throws IOException {
 		final Actions actions = new Actions(Manager.getDriver());
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_SubscribeNewsletter(), 5);
 		actions.moveToElement(FooterObjects.link_SubscribeNewsletter()).click().perform();
 		actions.moveToElement(FooterObjects.submit_SubscribeNewsletter()).click().perform();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 
 	public void clickGetText_SubscribeBlog() throws IOException {
@@ -133,88 +105,73 @@ public class FooterNavigationActions extends ParameterManager {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_SubscribeBlog(), 5);
 		actions.moveToElement(FooterObjects.link_SubscribeBlog()).click().perform();
-		;
 	}
 
-	public String click_SubscribeBlog_Submit() throws IOException {
+	public void click_SubscribeBlog_Submit() throws IOException {
 		final Actions actions = new Actions(Manager.getDriver());
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_SubscribeBlog(), 5);
 		actions.moveToElement(FooterObjects.link_SubscribeBlog()).click().perform();
 		actions.moveToElement(FooterObjects.submit_SubscribeBlog()).click().perform();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 
-	public String clickFooterLink_Facebook() throws IOException {
+	public void clickFooterLink_Facebook() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.icon_Facebook(), 5);
-		URLcheck = FooterObjects.icon_Facebook().getAttribute("href");
-		return URLcheck;
+		FooterObjects.icon_Facebook().click();
 	}
 
-	public String clickFooterLink_Twitter() throws IOException {
+	public void clickFooterLink_Twitter() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.icon_Twitter(), 5);
-		URLcheck = FooterObjects.icon_Twitter().getAttribute("href");
-		return URLcheck;
+		FooterObjects.icon_Twitter().click();
 	}
 
-	public String clickFooterLink_Instagram() throws IOException {
+	public void clickFooterLink_Instagram() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.icon_Instagram(), 5);
-		URLcheck = FooterObjects.icon_Instagram().getAttribute("href");
-		return URLcheck;
+		FooterObjects.icon_Instagram().click();
 	}
 
-	public String clickFooterLink_Pinterest() throws IOException {
+	public void clickFooterLink_Pinterest() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.icon_Pinterest(), 5);
-		URLcheck = FooterObjects.icon_Pinterest().getAttribute("href");
-		return URLcheck;
+		FooterObjects.icon_Pinterest().click();
 	}
 
-	public String clickFooterLink_Linkedin() throws IOException {
+	public void clickFooterLink_Linkedin() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.icon_Linkedin(), 5);
-		URLcheck = FooterObjects.icon_Linkedin().getAttribute("href");
-		return URLcheck;
+		FooterObjects.icon_Linkedin().click();
 	}
 
-	public String clickFooterLink_YouTube() throws IOException {
+	public void clickFooterLink_YouTube() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.icon_YouTube(), 5);
-		URLcheck = FooterObjects.icon_YouTube().getAttribute("href");
-		return URLcheck;
+		FooterObjects.icon_YouTube().click();
 	}
 
-	public String clickFooterLink_DownloadForApple() throws IOException {
+	public void clickFooterLink_DownloadForApple() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.button_DownloadApple(), 5);
-		URLcheck = FooterObjects.button_DownloadApple().getAttribute("href");
-		return URLcheck;
+		FooterObjects.button_DownloadApple().click();
 	}
 
-	public String clickFooterLink_DownloadForGoogle() throws IOException {
+	public void clickFooterLink_DownloadForGoogle() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.button_DownloadGoogle(), 5);
-		URLcheck = FooterObjects.button_DownloadGoogle().getAttribute("href");
-		return URLcheck;
+		FooterObjects.button_DownloadGoogle().click();
 	}
 
-	public String clickFooterLink_PressImage() throws IOException {
+	public void clickFooterLink_PressImage() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.img_Press(), 5);
 		FooterObjects.img_Press().click();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 
-	public String clickFooterLink_PrivacyPolicy() throws IOException {
+	public void clickFooterLink_PrivacyPolicy() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_PrivacyPolicy(), 5);
 		FooterObjects.link_PrivacyPolicy().click();
-		ResultantURL = Manager.getDriver().getCurrentUrl();
-		return ResultantURL;
 	}
 }

@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="Google Chrome"/>
   <listeners>
     <listener class-name="com.purebarre.www.driver.WebDriverListener"/>
   </listeners>
+  <test name="Test">
+    <parameter name="browser" value="Google Chrome"/>
+    <classes>
+      <class name="com.purebarre.www.datatests.NavigationTests"/>
+    </classes>
+  </test> <!-- Test -->
   <test name="Test(failed)">
     <parameter name="browser" value="Google Chrome"/>
-    <groups>
-      <run>
-        <include name="retest"/>
-      </run>
-    </groups>
     <classes>
       <class name="com.purebarre.www.datatests.NavigationTests">
         <methods>
+          <include name="clickFooterLink_SubscribeBlog_Submit"/>
+          <include name="clickFooterLink_SubscribeNewsletter_Submit"/>
           <include name="clickHeaderLink_Shop"/>
           <include name="clickHeaderLink_OwnAStudio"/>
-          <include name="clickFooterLink_Instagram"/>
           <include name="clickHeaderLink_Blog"/>
-          <include name="clickFooterLink_ContactUs"/>
+          <include name="clickFooterLink_ReturnsAndExchanges"/>
         </methods>
       </class> <!-- com.purebarre.www.datatests.NavigationTests -->
     </classes>
