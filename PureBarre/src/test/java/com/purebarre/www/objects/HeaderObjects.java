@@ -79,12 +79,12 @@ public class HeaderObjects {
 	}
 
 	public static WebElement link_Blog() {
-		element = Manager.getDriver().findElement(By.xpath("(//ul[@class='menu']//a[text()='Blog'])[1]"));
+		element = Manager.getDriver().findElement(By.xpath("//li[@id='menu-item-81']/a"));
 		return element;
 	}
 
 	public static WebElement link_Shop() {
-		element = Manager.getDriver().findElement(By.xpath("(//ul[@class='menu']//a[text()='Shop'])[1]"));
+		element = Manager.getDriver().findElement(By.xpath("//li[@id='menu-item-96']/a"));
 		return element;
 	}
 
@@ -94,7 +94,7 @@ public class HeaderObjects {
 	}
 
 	public static WebElement link_OwnAStudio() {
-		element = Manager.getDriver().findElement(By.xpath("(//ul[@class='menu']//a[text()='Own a Studio'])[1]"));
+		element = Manager.getDriver().findElement(By.xpath("//li[@id='menu-item-95']/a"));
 		return element;
 	}
 

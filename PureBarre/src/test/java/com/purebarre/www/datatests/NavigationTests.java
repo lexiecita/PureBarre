@@ -2,6 +2,7 @@ package com.purebarre.www.datatests;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -16,13 +17,14 @@ import com.purebarre.www.objects.FooterObjects;
 public class NavigationTests {
 
 	private String ResultantURL, ExpectedURL, URLcheck;
+	WebElement ExpectedText;
 	private HeaderNavigationActions na;
 	private FooterNavigationActions fna;
 	ExtentReports report;
 	ExtentTest test;
 
 	@Parameters({ "browser" })
-	@Test(groups = { "retest" })
+	@Test
 	public void clickHeaderLink_LocationsHeaderLink() throws IOException {
 		report = new ExtentReports();
 		na = new HeaderNavigationActions();
@@ -116,7 +118,7 @@ public class NavigationTests {
 	@Test
 	public void clickFooterLink_ReturnsAndExchanges() throws IOException {
 		fna = new FooterNavigationActions();
-		fna.clickFooterLink_OrderInformation();
+		fna.clickFooterLink_ReturnsAndExchanges();
 		ExpectedURL = "return-policy";
 		resultantURL();
 	}
@@ -203,11 +205,11 @@ public class NavigationTests {
 	}
 
 	@Parameters({ "browser" })
-	@Test
-	public void clickFooterLink_SubscribeNewsletter() throws IOException {
+	@Test(groups = { "retest" })
+	public void clickFooterLink_SubscribeNewsletter_Text() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickGetText_SubscribeNewsletter();
-		if (FooterObjects.text_SubscribeNewsletter().isDisplayed()) {
+		if (FooterObjects.field_SubscribeNewsletter().isDisplayed()) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
@@ -215,7 +217,7 @@ public class NavigationTests {
 	}
 
 	@Parameters({ "browser" })
-	@Test
+	@Test(groups = { "retest" })
 	public void clickFooterLink_SubscribeNewsletter_Submit() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.click_SubscribeNewsletter_Submit();
@@ -224,7 +226,7 @@ public class NavigationTests {
 	}
 
 	@Parameters({ "browser" })
-	@Test
+	@Test(groups = { "retest" })
 	public void clickFooterLink_SubscribeBlog() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickGetText_SubscribeBlog();
@@ -236,12 +238,15 @@ public class NavigationTests {
 	}
 
 	@Parameters({ "browser" })
-	@Test
+	@Test(groups = { "retest" })
 	public void clickFooterLink_SubscribeBlog_Submit() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.click_SubscribeBlog_Submit();
-		ExpectedURL = "press";
-		resultantURL();
+		if (FooterObjects.text_FollowingSubmit_SubscribeBlog().isDisplayed()) {
+			Assert.assertTrue(true);
+		} else {
+			Assert.assertTrue(false);
+		}
 	}
 
 	@Parameters({ "browser" })

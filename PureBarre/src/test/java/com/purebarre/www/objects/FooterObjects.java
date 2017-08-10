@@ -74,8 +74,8 @@ public class FooterObjects {
 		return element;
 	}
 	
-	public static WebElement text_SubscribeNewsletter() {
-		element = Manager.getDriver().findElement(By.xpath("(//input[@placeholder='Enter Email Address...'])[1]"));
+	public static WebElement field_SubscribeNewsletter() {
+		element = Manager.getDriver().findElement(By.xpath("//input[@id='newsletter']"));
 		return element;
 	}
 	
@@ -90,12 +90,17 @@ public class FooterObjects {
 	}
 	
 	public static WebElement text_SubscribeBlog() {
-		element = Manager.getDriver().findElement(By.xpath("(//input[@placeholder='Enter Email Address...'])[2]"));
+		element = Manager.getDriver().findElement(By.xpath("//form[@id='form-wysija-html56f560f9aa4c3-2']/input[1]"));
 		return element;
 	}
 	
 	public static WebElement submit_SubscribeBlog() {
 		element = Manager.getDriver().findElement(By.xpath("//input[@type='submit']"));
+		return element;
+	}
+	
+	public static WebElement text_FollowingSubmit_SubscribeBlog() {
+		element = Manager.getDriver().findElement(By.xpath("//div[@id='msg-form-wysija-html56f560f9aa4c3-2']/div/div/ul/li"));
 		return element;
 	}
 	

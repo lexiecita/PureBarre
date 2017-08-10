@@ -1,143 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="6" total="34" passed="28">
+<testng-results skipped="0" failed="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="340311" started-at="2017-08-04T21:39:10Z" finished-at="2017-08-04T21:44:50Z">
+  <suite name="Suite" duration-ms="24864" started-at="2017-08-08T20:57:18Z" finished-at="2017-08-08T20:57:43Z">
     <groups>
       <group name="retest">
-        <method signature="NavigationTests.clickHeaderLink_LocationsHeaderLink()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickHeaderLink_LocationsHeaderLink" class="com.purebarre.www.datatests.NavigationTests"/>
+        <method signature="NavigationTests.clickFooterLink_SubscribeBlog()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@1f28c152]" name="clickFooterLink_SubscribeBlog" class="com.purebarre.www.datatests.NavigationTests"/>
+        <method signature="NavigationTests.clickFooterLink_SubscribeBlog_Submit()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@1f28c152]" name="clickFooterLink_SubscribeBlog_Submit" class="com.purebarre.www.datatests.NavigationTests"/>
+        <method signature="NavigationTests.clickFooterLink_SubscribeNewsletter_Submit()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@1f28c152]" name="clickFooterLink_SubscribeNewsletter_Submit" class="com.purebarre.www.datatests.NavigationTests"/>
+        <method signature="NavigationTests.clickFooterLink_SubscribeNewsletter_Text()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@1f28c152]" name="clickFooterLink_SubscribeNewsletter_Text" class="com.purebarre.www.datatests.NavigationTests"/>
       </group> <!-- retest -->
     </groups>
-    <test name="Test" duration-ms="340311" started-at="2017-08-04T21:39:10Z" finished-at="2017-08-04T21:44:50Z">
+    <test name="Test" duration-ms="24864" started-at="2017-08-08T20:57:18Z" finished-at="2017-08-08T20:57:43Z">
       <class name="com.purebarre.www.datatests.NavigationTests">
-        <test-method status="PASS" signature="clickFooterLink_Careers()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_Careers" duration-ms="6687" started-at="2017-08-04T17:39:10Z" finished-at="2017-08-04T17:39:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_Careers -->
-        <test-method status="PASS" signature="clickFooterLink_ContactUs()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_ContactUs" duration-ms="5680" started-at="2017-08-04T17:39:17Z" finished-at="2017-08-04T17:39:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_ContactUs -->
-        <test-method status="PASS" signature="clickFooterLink_DownloadForApple()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_DownloadForApple" duration-ms="4313" started-at="2017-08-04T17:39:24Z" finished-at="2017-08-04T17:39:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_DownloadForApple -->
-        <test-method status="PASS" signature="clickFooterLink_DownloadForGoogle()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_DownloadForGoogle" duration-ms="4647" started-at="2017-08-04T17:39:29Z" finished-at="2017-08-04T17:39:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_DownloadForGoogle -->
-        <test-method status="PASS" signature="clickFooterLink_Facebook()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_Facebook" duration-ms="4196" started-at="2017-08-04T17:39:35Z" finished-at="2017-08-04T17:39:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_Facebook -->
-        <test-method status="PASS" signature="clickFooterLink_GiftCards()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_GiftCards" duration-ms="5239" started-at="2017-08-04T17:39:40Z" finished-at="2017-08-04T17:39:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_GiftCards -->
-        <test-method status="PASS" signature="clickFooterLink_Instagram()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_Instagram" duration-ms="4217" started-at="2017-08-04T17:39:46Z" finished-at="2017-08-04T17:39:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_Instagram -->
-        <test-method status="PASS" signature="clickFooterLink_Linkedin()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_Linkedin" duration-ms="4479" started-at="2017-08-04T17:39:51Z" finished-at="2017-08-04T17:39:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_Linkedin -->
-        <test-method status="PASS" signature="clickFooterLink_OrderInformation()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_OrderInformation" duration-ms="5351" started-at="2017-08-04T17:39:56Z" finished-at="2017-08-04T17:40:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_OrderInformation -->
-        <test-method status="PASS" signature="clickFooterLink_OwnerAndTeachersPortal()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_OwnerAndTeachersPortal" duration-ms="139268" started-at="2017-08-04T17:40:03Z" finished-at="2017-08-04T17:42:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_OwnerAndTeachersPortal -->
-        <test-method status="PASS" signature="clickFooterLink_Pinterest()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_Pinterest" duration-ms="4735" started-at="2017-08-04T17:42:23Z" finished-at="2017-08-04T17:42:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_Pinterest -->
-        <test-method status="PASS" signature="clickFooterLink_Press()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_Press" duration-ms="5893" started-at="2017-08-04T17:42:28Z" finished-at="2017-08-04T17:42:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_Press -->
-        <test-method status="PASS" signature="clickFooterLink_PressImage()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_PressImage" duration-ms="6282" started-at="2017-08-04T17:42:35Z" finished-at="2017-08-04T17:42:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_PressImage -->
-        <test-method status="PASS" signature="clickFooterLink_PrivacyPolicy()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_PrivacyPolicy" duration-ms="5242" started-at="2017-08-04T17:42:42Z" finished-at="2017-08-04T17:42:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_PrivacyPolicy -->
-        <test-method status="FAIL" signature="clickFooterLink_ReturnsAndExchanges()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_ReturnsAndExchanges" duration-ms="5087" started-at="2017-08-04T17:42:48Z" finished-at="2017-08-04T17:42:53Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.purebarre.www.datatests.NavigationTests.resultantURL(NavigationTests.java:374)
-	at com.purebarre.www.datatests.NavigationTests.clickFooterLink_ReturnsAndExchanges(NavigationTests.java:121)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_ReturnsAndExchanges -->
-        <test-method status="PASS" signature="clickFooterLink_ShippingInformation()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_ShippingInformation" duration-ms="5154" started-at="2017-08-04T17:42:54Z" finished-at="2017-08-04T17:42:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_ShippingInformation -->
-        <test-method status="PASS" signature="clickFooterLink_StreamingContentFAQ()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_StreamingContentFAQ" duration-ms="7157" started-at="2017-08-04T17:43:00Z" finished-at="2017-08-04T17:43:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_StreamingContentFAQ -->
-        <test-method status="PASS" signature="clickFooterLink_StudioOwnersShop()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_StudioOwnersShop" duration-ms="7725" started-at="2017-08-04T17:43:08Z" finished-at="2017-08-04T17:43:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_StudioOwnersShop -->
-        <test-method status="PASS" signature="clickFooterLink_SubscribeBlog()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_SubscribeBlog" duration-ms="6261" started-at="2017-08-04T17:43:17Z" finished-at="2017-08-04T17:43:23Z">
+        <test-method status="PASS" signature="clickFooterLink_SubscribeBlog()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@1f28c152]" name="clickFooterLink_SubscribeBlog" duration-ms="6425" started-at="2017-08-08T16:57:18Z" finished-at="2017-08-08T16:57:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickFooterLink_SubscribeBlog -->
-        <test-method status="FAIL" signature="clickFooterLink_SubscribeBlog_Submit()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_SubscribeBlog_Submit" duration-ms="4045" started-at="2017-08-04T17:43:24Z" finished-at="2017-08-04T17:43:28Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="clickFooterLink_SubscribeBlog_Submit()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@1f28c152]" name="clickFooterLink_SubscribeBlog_Submit" duration-ms="5532" started-at="2017-08-08T16:57:26Z" finished-at="2017-08-08T16:57:31Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='msg-form-wysija-html56f560f9aa4c3-2']/div/div/ul/li"}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 820 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'WK2407', ip: '10.66.29.36', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ALEXIS~1\AppData\Local\Temp\scoped_dir7052_2316}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 2a913659b45f48eadd3503e763491032
+*** Element info: {Using=xpath, value=//div[@id='msg-form-wysija-html56f560f9aa4c3-2']/div/div/ul/li}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.purebarre.www.datatests.NavigationTests.resultantURL(NavigationTests.java:374)
-	at com.purebarre.www.datatests.NavigationTests.clickFooterLink_SubscribeBlog_Submit(NavigationTests.java:244)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='msg-form-wysija-html56f560f9aa4c3-2']/div/div/ul/li"}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 820 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'WK2407', ip: '10.66.29.36', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ALEXIS~1\AppData\Local\Temp\scoped_dir7052_2316}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 2a913659b45f48eadd3503e763491032
+*** Element info: {Using=xpath, value=//div[@id='msg-form-wysija-html56f560f9aa4c3-2']/div/div/ul/li}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.purebarre.www.objects.FooterObjects.text_FollowingSubmit_SubscribeBlog(FooterObjects.java:103)
+	at com.purebarre.www.datatests.NavigationTests.clickFooterLink_SubscribeBlog_Submit(NavigationTests.java:245)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -164,15 +83,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickFooterLink_SubscribeBlog_Submit -->
-        <test-method status="PASS" signature="clickFooterLink_SubscribeNewsletter()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_SubscribeNewsletter" duration-ms="4016" started-at="2017-08-04T17:43:29Z" finished-at="2017-08-04T17:43:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_SubscribeNewsletter -->
-        <test-method status="FAIL" signature="clickFooterLink_SubscribeNewsletter_Submit()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_SubscribeNewsletter_Submit" duration-ms="4174" started-at="2017-08-04T17:43:34Z" finished-at="2017-08-04T17:43:38Z">
+        <test-method status="FAIL" signature="clickFooterLink_SubscribeNewsletter_Submit()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@1f28c152]" name="clickFooterLink_SubscribeNewsletter_Submit" duration-ms="4563" started-at="2017-08-08T16:57:32Z" finished-at="2017-08-08T16:57:37Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -183,8 +98,8 @@
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.purebarre.www.datatests.NavigationTests.resultantURL(NavigationTests.java:374)
-	at com.purebarre.www.datatests.NavigationTests.clickFooterLink_SubscribeNewsletter_Submit(NavigationTests.java:223)
+	at com.purebarre.www.datatests.NavigationTests.resultantURL(NavigationTests.java:379)
+	at com.purebarre.www.datatests.NavigationTests.clickFooterLink_SubscribeNewsletter_Submit(NavigationTests.java:225)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -215,192 +130,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickFooterLink_SubscribeNewsletter_Submit -->
-        <test-method status="PASS" signature="clickFooterLink_Team()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_Team" duration-ms="5353" started-at="2017-08-04T17:43:39Z" finished-at="2017-08-04T17:43:44Z">
+        <test-method status="PASS" signature="clickFooterLink_SubscribeNewsletter_Text()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@1f28c152]" name="clickFooterLink_SubscribeNewsletter_Text" duration-ms="4618" started-at="2017-08-08T16:57:38Z" finished-at="2017-08-08T16:57:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickFooterLink_Team -->
-        <test-method status="PASS" signature="clickFooterLink_Twitter()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_Twitter" duration-ms="4125" started-at="2017-08-04T17:43:45Z" finished-at="2017-08-04T17:43:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_Twitter -->
-        <test-method status="PASS" signature="clickFooterLink_YouTube()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickFooterLink_YouTube" duration-ms="4060" started-at="2017-08-04T17:43:50Z" finished-at="2017-08-04T17:43:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFooterLink_YouTube -->
-        <test-method status="PASS" signature="clickHeaderLink_AboutOurTechnique()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickHeaderLink_AboutOurTechnique" duration-ms="5856" started-at="2017-08-04T17:43:55Z" finished-at="2017-08-04T17:44:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickHeaderLink_AboutOurTechnique -->
-        <test-method status="FAIL" signature="clickHeaderLink_Blog()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickHeaderLink_Blog" duration-ms="3858" started-at="2017-08-04T17:44:01Z" finished-at="2017-08-04T17:44:05Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.purebarre.www.datatests.NavigationTests.resultantURL(NavigationTests.java:374)
-	at com.purebarre.www.datatests.NavigationTests.clickHeaderLink_Blog(NavigationTests.java:94)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickHeaderLink_Blog -->
-        <test-method status="PASS" signature="clickHeaderLink_LocationsHeaderLink()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickHeaderLink_LocationsHeaderLink" duration-ms="5028" started-at="2017-08-04T17:44:06Z" finished-at="2017-08-04T17:44:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickHeaderLink_LocationsHeaderLink -->
-        <test-method status="PASS" signature="clickHeaderLink_NewToPureBarre()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickHeaderLink_NewToPureBarre" duration-ms="7516" started-at="2017-08-04T17:44:12Z" finished-at="2017-08-04T17:44:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickHeaderLink_NewToPureBarre -->
-        <test-method status="FAIL" signature="clickHeaderLink_OwnAStudio()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickHeaderLink_OwnAStudio" duration-ms="4027" started-at="2017-08-04T17:44:21Z" finished-at="2017-08-04T17:44:25Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element is not clickable at point (-150, 297)
-  (Session info: chrome=60.0.3112.90)
-  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 73 milliseconds
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'WK2407', ip: '10.66.29.36', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ALEXIS~1\AppData\Local\Temp\scoped_dir4368_27905}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 8663c637342dbc4a0486d2d4182dca00]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (-150, 297)
-  (Session info: chrome=60.0.3112.90)
-  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 73 milliseconds
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'WK2407', ip: '10.66.29.36', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ALEXIS~1\AppData\Local\Temp\scoped_dir4368_27905}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 8663c637342dbc4a0486d2d4182dca00
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at com.purebarre.www.dataaction.HeaderNavigationActions.clickOwnAStudio(HeaderNavigationActions.java:93)
-	at com.purebarre.www.datatests.NavigationTests.clickHeaderLink_OwnAStudio(NavigationTests.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickHeaderLink_OwnAStudio -->
-        <test-method status="PASS" signature="clickHeaderLink_PureFoundations()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickHeaderLink_PureFoundations" duration-ms="6207" started-at="2017-08-04T17:44:26Z" finished-at="2017-08-04T17:44:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickHeaderLink_PureFoundations -->
-        <test-method status="FAIL" signature="clickHeaderLink_Shop()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickHeaderLink_Shop" duration-ms="3880" started-at="2017-08-04T17:44:33Z" finished-at="2017-08-04T17:44:36Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.purebarre.www.datatests.NavigationTests.resultantURL(NavigationTests.java:374)
-	at com.purebarre.www.datatests.NavigationTests.clickHeaderLink_Shop(NavigationTests.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickHeaderLink_Shop -->
-        <test-method status="PASS" signature="clickHeaderLink_SpecialtyClasses()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickHeaderLink_SpecialtyClasses" duration-ms="5518" started-at="2017-08-04T17:44:37Z" finished-at="2017-08-04T17:44:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickHeaderLink_SpecialtyClasses -->
-        <test-method status="PASS" signature="clickHeaderLink_Story()[pri:0, instance:com.purebarre.www.datatests.NavigationTests@5a8e6209]" name="clickHeaderLink_Story" duration-ms="5375" started-at="2017-08-04T17:44:44Z" finished-at="2017-08-04T17:44:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickHeaderLink_Story -->
+        </test-method> <!-- clickFooterLink_SubscribeNewsletter_Text -->
       </class> <!-- com.purebarre.www.datatests.NavigationTests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
