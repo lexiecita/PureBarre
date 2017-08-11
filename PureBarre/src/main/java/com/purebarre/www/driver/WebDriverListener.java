@@ -29,8 +29,3 @@ public class WebDriverListener extends ParameterManager implements IInvokedMetho
 		}
 	}
 }
-
-/*
- * System.setProperty(Constants.Driver, Constants.DriverPath);
- * WebDriver driver = new ChromeDriver();
- */

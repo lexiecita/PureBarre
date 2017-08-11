@@ -1,6 +1,9 @@
 package com.purebarre.www.utils;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,7 +21,8 @@ public class WaitTypes {
 		WebElement element = null;
 		try {
 			System.out.println("Waiting for max:: " + timeout + " second for element to be available");
-			final WebDriverWait wait = new WebDriverWait(driver, 3);
+			//this time unit is always seconds
+			final WebDriverWait wait = new WebDriverWait(driver, 5);
 			element = wait.until(ExpectedConditions.visibilityOfElementLocated((By) webElement));
 			System.out.println("Element appear on the web page");
 		} catch (final Exception e) {
@@ -26,6 +30,22 @@ public class WaitTypes {
 		}
 		return element;
 	}
+	
+	public WebElement waitForElementWithPolling(final WebElement webElement, final int timeout) {
+		WebElement element = null;
+		try {
+			System.out.println("Waiting for max:: " + timeout + " second for element to be available");
+			//timeout after 3 seconds
+			final WebDriverWait wait = new WebDriverWait(driver, 5);
+			//wait for 3 seconds, and poll every 1 second within the 3 seconds
+			element = wait.pollingEvery(1, TimeUnit.SECONDS).ignoring(NoSuchElementException.class).until(ExpectedConditions.visibilityOfElementLocated((By) webElement));
+			System.out.println("Element appear on the web page");
+		} catch (final Exception e) {
+			System.out.println("Element did not appear on webpage");
+		}
+		return element;
+	}
+	
 	
 
 	/*

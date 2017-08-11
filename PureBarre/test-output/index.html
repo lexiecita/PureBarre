@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,11 +103,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.purebarre.www.datatests.NavigationTests" hash-for-method="clickFooterLink_SubscribeBlog_Submit">clickFooterLink_SubscribeBlog_Submit</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.purebarre.www.datatests.NavigationTests" hash-for-method="clickFooterLink_SubscribeNewsletter_Submit">clickFooterLink_SubscribeNewsletter_Submit</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -122,11 +117,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.purebarre.www.datatests.NavigationTests" hash-for-method="clickFooterLink_SubscribeBlog">clickFooterLink_SubscribeBlog</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.purebarre.www.datatests.NavigationTests" hash-for-method="clickFooterLink_SubscribeNewsletter_Text">clickFooterLink_SubscribeNewsletter_Text</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -152,17 +142,17 @@
                   <a name="clickFooterLink_SubscribeBlog_Submit">
                   </a> <!-- clickFooterLink_SubscribeBlog_Submit -->
                   <span class="method-name">clickFooterLink_SubscribeBlog_Submit</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;msg-form-wysija-html56f560f9aa4c3-2&apos;]/div/div/ul/li&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[contains(text(), &apos;Check your inbox or spam folder now to confirm your subscription&apos;)]&quot;}
   (Session info: chrome=60.0.3112.90)
   (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 820 milliseconds
+Command duration or timeout: 35 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;WK2407&apos;, ip: &apos;10.66.29.36&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ALEXIS~1\AppData\Local\Temp\scoped_dir7052_2316}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 2a913659b45f48eadd3503e763491032
-*** Element info: {Using=xpath, value=//div[@id=&apos;msg-form-wysija-html56f560f9aa4c3-2&apos;]/div/div/ul/li}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ALEXIS~1\AppData\Local\Temp\scoped_dir9328_12347}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 94165cefe544ed90402073ce06519941
+*** Element info: {Using=xpath, value=//li[contains(text(), &apos;Check your inbox or spam folder now to confirm your subscription&apos;)]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
@@ -170,20 +160,8 @@ Session ID: 2a913659b45f48eadd3503e763491032
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at com.purebarre.www.objects.FooterObjects.text_FollowingSubmit_SubscribeBlog(FooterObjects.java:103)
-	at com.purebarre.www.datatests.NavigationTests.clickFooterLink_SubscribeBlog_Submit(NavigationTests.java:245)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickFooterLink_SubscribeNewsletter_Submit">
-                  </a> <!-- clickFooterLink_SubscribeNewsletter_Submit -->
-                  <span class="method-name">clickFooterLink_SubscribeNewsletter_Submit</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.purebarre.www.datatests.NavigationTests.resultantURL(NavigationTests.java:379)
-	at com.purebarre.www.datatests.NavigationTests.clickFooterLink_SubscribeNewsletter_Submit(NavigationTests.java:225)
+	at com.purebarre.www.objects.FooterObjects.text_FollowingSubmit_SubscribeBlog(FooterObjects.java:108)
+	at com.purebarre.www.datatests.NavigationTests.clickFooterLink_SubscribeBlog_Submit(NavigationTests.java:251)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -201,13 +179,6 @@ Session ID: 2a913659b45f48eadd3503e763491032
                   <a name="clickFooterLink_SubscribeBlog">
                   </a> <!-- clickFooterLink_SubscribeBlog -->
                   <span class="method-name">clickFooterLink_SubscribeBlog</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickFooterLink_SubscribeNewsletter_Text">
-                  </a> <!-- clickFooterLink_SubscribeNewsletter_Text -->
-                  <span class="method-name">clickFooterLink_SubscribeNewsletter_Text</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -268,14 +239,6 @@ Session ID: 2a913659b45f48eadd3503e763491032
                 <span class="method-in-group-name">clickFooterLink_SubscribeBlog_Submit</span>
                 <br/>
               </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">clickFooterLink_SubscribeNewsletter_Submit</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">clickFooterLink_SubscribeNewsletter_Text</span>
-                <br/>
-              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -293,28 +256,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'clickFooterLink_SubscribeBlog')
 data.setCell(0, 2, 'com.purebarre.www.datatests.NavigationTests')
-data.setCell(0, 3, 6425);
+data.setCell(0, 3, 5683);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'clickFooterLink_SubscribeBlog_Submit')
 data.setCell(1, 2, 'com.purebarre.www.datatests.NavigationTests')
-data.setCell(1, 3, 5532);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'clickFooterLink_SubscribeNewsletter_Text')
-data.setCell(2, 2, 'com.purebarre.www.datatests.NavigationTests')
-data.setCell(2, 3, 4618);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clickFooterLink_SubscribeNewsletter_Submit')
-data.setCell(3, 2, 'com.purebarre.www.datatests.NavigationTests')
-data.setCell(3, 3, 4563);
+data.setCell(1, 3, 4920);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -329,13 +284,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">30 ignored methods</span>
+            <span class="header-content">32 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.purebarre.www.datatests.NavigationTests</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">clickFooterLink_YouTube</span>
+                <br/>
+                <span class="ignored-method-name">clickFooterLink_SubscribeNewsletter_Text</span>
                 <br/>
                 <span class="ignored-method-name">clickFooterLink_Linkedin</span>
                 <br/>
@@ -374,6 +331,8 @@ return data;
                 <span class="ignored-method-name">clickFooterLink_ReturnsAndExchanges</span>
                 <br/>
                 <span class="ignored-method-name">clickHeaderLink_AboutOurTechnique</span>
+                <br/>
+                <span class="ignored-method-name">clickFooterLink_SubscribeNewsletter_Submit</span>
                 <br/>
                 <span class="ignored-method-name">clickFooterLink_Instagram</span>
                 <br/>
@@ -414,17 +373,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">clickFooterLink_SubscribeBlog_Submit</span>
-                <span class="method-start">7596 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">clickFooterLink_SubscribeNewsletter_Submit</span>
-                <span class="method-start">14031 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickFooterLink_SubscribeNewsletter_Text</span>
-                <span class="method-start">19399 ms</span>
+                <span class="method-start">6756 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

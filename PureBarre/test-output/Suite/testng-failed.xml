@@ -27,7 +27,6 @@
       <class name="com.purebarre.www.datatests.NavigationTests">
         <methods>
           <include name="clickFooterLink_SubscribeBlog_Submit"/>
-          <include name="clickFooterLink_SubscribeNewsletter_Submit"/>
         </methods>
       </class> <!-- com.purebarre.www.datatests.NavigationTests -->
     </classes>

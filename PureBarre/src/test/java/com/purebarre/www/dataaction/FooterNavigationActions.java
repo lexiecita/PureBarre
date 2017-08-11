@@ -97,8 +97,6 @@ public class FooterNavigationActions extends ParameterManager {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement(FooterObjects.link_SubscribeNewsletter(), 5);
 		actions.moveToElement(FooterObjects.link_SubscribeNewsletter()).click().perform();
-/*		actions.moveToElement(FooterObjects.field_SubscribeNewsletter()).sendKeys("test@test.com").perform();
-		actions.moveToElement(FooterObjects.submit_SubscribeNewsletter()).click().perform();*/
 	}
 
 	public void clickGetText_SubscribeBlog() throws IOException {
@@ -111,10 +109,11 @@ public class FooterNavigationActions extends ParameterManager {
 	public void click_SubscribeBlog_Submit() throws IOException {
 		final Actions actions = new Actions(Manager.getDriver());
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
-		wait.waitForElement(FooterObjects.link_SubscribeBlog(), 5);
+		wait.waitForElementWithPolling(FooterObjects.link_SubscribeBlog(), 5);
 		actions.moveToElement(FooterObjects.link_SubscribeBlog()).click().perform();
-/*		actions.moveToElement(FooterObjects.text_SubscribeBlog()).sendKeys("test@test.com").perform();
-		actions.moveToElement(FooterObjects.submit_SubscribeBlog()).click().perform();*/
+		wait.waitForElementWithPolling(FooterObjects.text_SubscribeBlog(), 5);
+		actions.moveToElement(FooterObjects.text_SubscribeBlog()).sendKeys("test@test.com").perform();
+		actions.moveToElement(FooterObjects.submit_SubscribeBlog()).click().perform();
 	}
 
 	public void clickFooterLink_Facebook() throws IOException {

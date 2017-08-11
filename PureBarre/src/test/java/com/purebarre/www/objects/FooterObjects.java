@@ -84,6 +84,11 @@ public class FooterObjects {
 		return element;
 	}
 	
+	public static WebElement form_GetId_SubscribeNewsletter() {
+		element = Manager.getDriver().findElement(By.xpath("//form[@id='newsletter-validate-detail']"));
+		return element;
+	}
+	
 	public static WebElement link_SubscribeBlog() {
 		element = Manager.getDriver().findElement(By.xpath("//a[contains(text(), 'Subscribe to Our Blog')]"));
 		return element;
@@ -100,7 +105,7 @@ public class FooterObjects {
 	}
 	
 	public static WebElement text_FollowingSubmit_SubscribeBlog() {
-		element = Manager.getDriver().findElement(By.xpath("//div[@id='msg-form-wysija-html56f560f9aa4c3-2']/div/div/ul/li"));
+		element = Manager.getDriver().findElement(By.xpath("//li[contains(text(), 'Check your inbox or spam folder now to confirm your subscription')]"));
 		return element;
 	}
 	

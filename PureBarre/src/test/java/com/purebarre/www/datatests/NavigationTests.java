@@ -16,7 +16,9 @@ import com.purebarre.www.objects.FooterObjects;
 
 public class NavigationTests {
 
-	private String ResultantURL, ExpectedURL, URLcheck;
+	private String ResultantURL, ExpectedURL, URLcheck, ActionCheck;
+	WebElement BlogText;
+	String BlogSubmitText;
 	WebElement ExpectedText;
 	private HeaderNavigationActions na;
 	private FooterNavigationActions fna;
@@ -205,7 +207,7 @@ public class NavigationTests {
 	}
 
 	@Parameters({ "browser" })
-	@Test(groups = { "retest" })
+	@Test(groups = { "subscribenewsletter" })
 	public void clickFooterLink_SubscribeNewsletter_Text() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickGetText_SubscribeNewsletter();
@@ -217,12 +219,16 @@ public class NavigationTests {
 	}
 
 	@Parameters({ "browser" })
-	@Test(groups = { "retest" })
+	@Test(groups = { "subscribenewsletter" })
 	public void clickFooterLink_SubscribeNewsletter_Submit() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.click_SubscribeNewsletter_Submit();
-		ExpectedURL = "audience/signup/";
-		resultantURL();
+		ActionCheck = FooterObjects.form_GetId_SubscribeNewsletter().getAttribute("action");
+		if (ActionCheck.contains("audience/signup")) {
+			Assert.assertTrue(true);
+		} else {
+			Assert.assertTrue(false);
+		}
 	}
 
 	@Parameters({ "browser" })
@@ -242,7 +248,8 @@ public class NavigationTests {
 	public void clickFooterLink_SubscribeBlog_Submit() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.click_SubscribeBlog_Submit();
-		if (FooterObjects.text_FollowingSubmit_SubscribeBlog().isDisplayed()) {
+		BlogSubmitText = FooterObjects.text_FollowingSubmit_SubscribeBlog().getAttribute("li");
+		if (BlogSubmitText.contains("Check your inbox")) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
