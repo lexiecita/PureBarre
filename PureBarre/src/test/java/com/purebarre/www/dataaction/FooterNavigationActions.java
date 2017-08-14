@@ -111,9 +111,9 @@ public class FooterNavigationActions extends ParameterManager {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElementWithPolling(FooterObjects.link_SubscribeBlog(), 5);
 		actions.moveToElement(FooterObjects.link_SubscribeBlog()).click().perform();
-		wait.waitForElementWithPolling(FooterObjects.text_SubscribeBlog(), 5);
-		actions.moveToElement(FooterObjects.text_SubscribeBlog()).sendKeys("test@test.com").perform();
-		actions.moveToElement(FooterObjects.submit_SubscribeBlog()).click().perform();
+		wait.waitForElementWithPolling(FooterObjects.textBox_secondState_SubscribeBlog(), 5);
+		actions.moveToElement(FooterObjects.textBox_secondState_SubscribeBlog()).click().sendKeys("test@test.com").perform();
+		actions.moveToElement(FooterObjects.submit_SubscribeBlog()).click().perform();	
 	}
 
 	public void clickFooterLink_Facebook() throws IOException {

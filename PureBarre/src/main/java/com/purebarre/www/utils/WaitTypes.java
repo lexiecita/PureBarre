@@ -2,7 +2,6 @@ package com.purebarre.www.utils;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,41 +10,36 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitTypes {
 
-	WebDriver driver;
+	private WebDriver driver;
 
-	public WaitTypes(final WebDriver driver) {
+	public WaitTypes(WebDriver driver) {
 		this.driver = driver;
 	}
 
-	public WebElement waitForElement(final WebElement webElement, final int timeout) {
-		WebElement element = null;
+	public void waitForElement(WebElement webElement, int timeout) {
 		try {
 			System.out.println("Waiting for max:: " + timeout + " second for element to be available");
 			//this time unit is always seconds
-			final WebDriverWait wait = new WebDriverWait(driver, 5);
-			element = wait.until(ExpectedConditions.visibilityOfElementLocated((By) webElement));
-			System.out.println("Element appear on the web page");
-		} catch (final Exception e) {
-			System.out.println("Element did not appear on webpage");
+			WebDriverWait wait = new WebDriverWait(driver, timeout);
+			wait.until(ExpectedConditions.elementToBeClickable(webElement));
+			System.out.println("Element" + webElement + " appears on the web page");
+		} catch (Exception e) {
+			System.out.println("Element" + webElement + "  did not appear on webpage");
 		}
-		return element;
 	}
 	
-	public WebElement waitForElementWithPolling(final WebElement webElement, final int timeout) {
-		WebElement element = null;
+	public void waitForElementWithPolling(WebElement webElement, int timeout) {
 		try {
 			System.out.println("Waiting for max:: " + timeout + " second for element to be available");
 			//timeout after 3 seconds
-			final WebDriverWait wait = new WebDriverWait(driver, 5);
+			WebDriverWait wait = new WebDriverWait(driver, timeout);
 			//wait for 3 seconds, and poll every 1 second within the 3 seconds
-			element = wait.pollingEvery(1, TimeUnit.SECONDS).ignoring(NoSuchElementException.class).until(ExpectedConditions.visibilityOfElementLocated((By) webElement));
-			System.out.println("Element appear on the web page");
-		} catch (final Exception e) {
-			System.out.println("Element did not appear on webpage");
+			wait.pollingEvery(1, TimeUnit.SECONDS).ignoring(NoSuchElementException.class).until(ExpectedConditions.elementToBeClickable(webElement));
+			System.out.println("Element" + webElement + " appears on the web page");
+		} catch (Exception e) {
+			System.out.println("Element" + webElement + "  did not appear on webpage");
 		}
-		return element;
 	}
-	
 	
 
 	/*

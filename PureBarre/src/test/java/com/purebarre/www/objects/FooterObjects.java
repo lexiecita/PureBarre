@@ -99,13 +99,23 @@ public class FooterObjects {
 		return element;
 	}
 	
+	public static WebElement textBox_SubscribeBlog() {
+		element = Manager.getDriver().findElement(By.xpath("//form[@id='newsletter-validate-detail']//input[@name][1]"));
+		return element;
+	}
+	
+	public static WebElement textBox_secondState_SubscribeBlog() {
+		element = Manager.getDriver().findElement(By.xpath("//input[@name='wysija[user][email]']"));
+		return element;
+	}
+	
 	public static WebElement submit_SubscribeBlog() {
 		element = Manager.getDriver().findElement(By.xpath("//input[@type='submit']"));
 		return element;
 	}
 	
 	public static WebElement text_FollowingSubmit_SubscribeBlog() {
-		element = Manager.getDriver().findElement(By.xpath("//li[contains(text(), 'Check your inbox or spam folder now to confirm your subscription')]"));
+		element = Manager.getDriver().findElement(By.xpath("//div[@class='updated']//li[contains(text(), 'Check your inbox')]"));
 		return element;
 	}
 	

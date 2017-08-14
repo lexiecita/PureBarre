@@ -25,7 +25,7 @@ public class WebDriverListener extends ParameterManager implements IInvokedMetho
 	public void afterInvocation(final IInvokedMethod method, final ITestResult testResult) {
 		final WebDriver driver = Manager.getDriver();
 		if (driver != null) {
-			driver.quit();
+/*			driver.quit();*/
 		}
 	}
 }

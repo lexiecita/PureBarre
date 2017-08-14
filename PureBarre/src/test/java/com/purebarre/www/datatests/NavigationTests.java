@@ -16,9 +16,8 @@ import com.purebarre.www.objects.FooterObjects;
 
 public class NavigationTests {
 
-	private String ResultantURL, ExpectedURL, URLcheck, ActionCheck;
+	private String ResultantURL, ExpectedURL, URLcheck, ActionCheck, BlogSubmitText;
 	WebElement BlogText;
-	String BlogSubmitText;
 	WebElement ExpectedText;
 	private HeaderNavigationActions na;
 	private FooterNavigationActions fna;
@@ -232,7 +231,7 @@ public class NavigationTests {
 	}
 
 	@Parameters({ "browser" })
-	@Test(groups = { "retest" })
+	@Test(groups = { "blog" })
 	public void clickFooterLink_SubscribeBlog() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickGetText_SubscribeBlog();
@@ -244,12 +243,17 @@ public class NavigationTests {
 	}
 
 	@Parameters({ "browser" })
-	@Test(groups = { "retest" })
+	@Test(groups = { "blog" })
 	public void clickFooterLink_SubscribeBlog_Submit() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.click_SubscribeBlog_Submit();
-		BlogSubmitText = FooterObjects.text_FollowingSubmit_SubscribeBlog().getAttribute("li");
-		if (BlogSubmitText.contains("Check your inbox")) {
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		if (FooterObjects.text_FollowingSubmit_SubscribeBlog().isDisplayed()) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);

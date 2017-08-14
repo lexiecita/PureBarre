@@ -9,26 +9,11 @@
     <parameter name="browser" value="Google Chrome"/>
     <groups>
       <run>
-        <include name="retest"/>
+        <include name="blog"/>
       </run>
     </groups>
     <classes>
       <class name="com.purebarre.www.datatests.NavigationTests"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <parameter name="browser" value="Google Chrome"/>
-    <groups>
-      <run>
-        <include name="retest"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="com.purebarre.www.datatests.NavigationTests">
-        <methods>
-          <include name="clickFooterLink_SubscribeBlog_Submit"/>
-        </methods>
-      </class> <!-- com.purebarre.www.datatests.NavigationTests -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
