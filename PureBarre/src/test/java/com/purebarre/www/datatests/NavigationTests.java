@@ -206,7 +206,7 @@ public class NavigationTests {
 	}
 
 	@Parameters({ "browser" })
-	@Test(groups = { "subscribenewsletter" })
+	@Test
 	public void clickFooterLink_SubscribeNewsletter_Text() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickGetText_SubscribeNewsletter();
@@ -218,7 +218,7 @@ public class NavigationTests {
 	}
 
 	@Parameters({ "browser" })
-	@Test(groups = { "subscribenewsletter" })
+	@Test
 	public void clickFooterLink_SubscribeNewsletter_Submit() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.click_SubscribeNewsletter_Submit();
@@ -231,7 +231,7 @@ public class NavigationTests {
 	}
 
 	@Parameters({ "browser" })
-	@Test(groups = { "blog" })
+	@Test
 	public void clickFooterLink_SubscribeBlog() throws IOException {
 		fna = new FooterNavigationActions();
 		fna.clickGetText_SubscribeBlog();
@@ -243,16 +243,11 @@ public class NavigationTests {
 	}
 
 	@Parameters({ "browser" })
-	@Test(groups = { "blog" })
-	public void clickFooterLink_SubscribeBlog_Submit() throws IOException {
+	@Test
+	public void clickFooterLink_SubscribeBlog_Submit() throws IOException, InterruptedException {
 		fna = new FooterNavigationActions();
 		fna.click_SubscribeBlog_Submit();
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Thread.sleep(2000);
 		if (FooterObjects.text_FollowingSubmit_SubscribeBlog().isDisplayed()) {
 			Assert.assertTrue(true);
 		} else {

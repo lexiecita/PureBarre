@@ -6,6 +6,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitTypes {
@@ -16,9 +17,9 @@ public class WaitTypes {
 		this.driver = driver;
 	}
 
-	public void waitForElement(WebElement webElement, int timeout) {
+	public void waitForElement_Clickable(WebElement webElement, int timeout) {
 		try {
-			System.out.println("Waiting for max:: " + timeout + " second for element to be available");
+			System.out.println("Waiting for: " + timeout + " seconds for element to be available");
 			//this time unit is always seconds
 			WebDriverWait wait = new WebDriverWait(driver, timeout);
 			wait.until(ExpectedConditions.elementToBeClickable(webElement));
@@ -30,12 +31,17 @@ public class WaitTypes {
 	
 	public void waitForElementWithPolling(WebElement webElement, int timeout) {
 		try {
-			System.out.println("Waiting for max:: " + timeout + " second for element to be available");
+			System.out.println("Waiting for: " + timeout + " seconds for element to be available");
 			//timeout after 3 seconds
-			WebDriverWait wait = new WebDriverWait(driver, timeout);
+/*			WebDriverWait wait = new WebDriverWait(driver, timeout);
+*/			FluentWait<WebDriver> fluentWait = new FluentWait<>(driver);
+/*			        .withTimeout(30, TimeUnit.SECONDS)
+			        .pollingEvery(200, TimeUnit.MILLISECONDS)
+			        .ignoring(NoSuchElementException.class);*/
 			//wait for 3 seconds, and poll every 1 second within the 3 seconds
-			wait.pollingEvery(1, TimeUnit.SECONDS).ignoring(NoSuchElementException.class).until(ExpectedConditions.elementToBeClickable(webElement));
-			System.out.println("Element" + webElement + " appears on the web page");
+			fluentWait.pollingEvery(3, TimeUnit.SECONDS).ignoring(NoSuchElementException.class).until(ExpectedConditions.elementToBeClickable(webElement));
+/*			wait.pollingEvery(3, TimeUnit.SECONDS).ignoring(NoSuchElementException.class).until(ExpectedConditions.elementToBeClickable(webElement));
+*/			System.out.println("Element" + webElement + " appears on the web page");
 		} catch (Exception e) {
 			System.out.println("Element" + webElement + "  did not appear on webpage");
 		}

@@ -8,11 +8,11 @@
 		<parameter name="browser" value="Google Chrome"/>
 		<groups>
 			<run>
-				<include name="blog"/>
+				<include name="retest"/>
 			</run>
 		</groups>
 		<classes>
-			<class name="com.purebarre.www.datatests.NavigationTests"></class>
+			<class name="com.purebarre.www.datatests.UtilityTests"></class>
 		</classes>
 	</test>
 </suite>

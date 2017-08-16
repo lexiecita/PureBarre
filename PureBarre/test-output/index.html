@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.purebarre.www.datatests.NavigationTests" hash-for-method="clickFooterLink_SubscribeBlog">clickFooterLink_SubscribeBlog</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.purebarre.www.datatests.UtilityTests" hash-for-method="clickLink_MakeThisYourStudio">clickLink_MakeThisYourStudio</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.purebarre.www.datatests.NavigationTests" hash-for-method="clickFooterLink_SubscribeBlog_Submit">clickFooterLink_SubscribeBlog_Submit</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,28 +117,44 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.purebarre.www.datatests.NavigationTests</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.purebarre.www.datatests.UtilityTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickFooterLink_SubscribeBlog">
-                  </a> <!-- clickFooterLink_SubscribeBlog -->
-                  <span class="method-name">clickFooterLink_SubscribeBlog</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickFooterLink_SubscribeBlog_Submit">
-                  </a> <!-- clickFooterLink_SubscribeBlog_Submit -->
-                  <span class="method-name">clickFooterLink_SubscribeBlog_Submit</span>
+                  <a name="clickLink_MakeThisYourStudio">
+                  </a> <!-- clickLink_MakeThisYourStudio -->
+                  <span class="method-name">clickLink_MakeThisYourStudio</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@id=&apos;location-widget-studio-list&apos;]//li[1]/form/input[1]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;WK2407&apos;, ip: &apos;10.66.29.36&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ALEXIS~1\AppData\Local\Temp\scoped_dir12456_15330}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 5d8bb12e63f51b5471ee4c3fb7659053
+*** Element info: {Using=xpath, value=//ul[@id=&apos;location-widget-studio-list&apos;]//li[1]/form/input[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.purebarre.www.objects.UtilityObjects.link_MakeThisYourStudio(UtilityObjects.java:38)
+	at com.purebarre.www.dataaction.UtilityHeaderActions.clicklink_MakeThisYourStudio(UtilityHeaderActions.java:44)
+	at com.purebarre.www.datatests.UtilityTests.clickLink_MakeThisYourStudio(UtilityTests.java:63)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -161,11 +172,11 @@
     &lt;parameter name=&quot;browser&quot; value=&quot;Google Chrome&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;blog&quot;/&gt;
+        &lt;include name=&quot;retest&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.purebarre.www.datatests.NavigationTests&quot;/&gt;
+      &lt;class name=&quot;com.purebarre.www.datatests.UtilityTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -190,14 +201,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">blog</span>
+              <span class="test-group-name">retest</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">clickFooterLink_SubscribeBlog</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">clickFooterLink_SubscribeBlog_Submit</span>
+                <span class="method-in-group-name">clickLink_MakeThisYourStudio</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -217,20 +224,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickFooterLink_SubscribeBlog_Submit')
-data.setCell(0, 2, 'com.purebarre.www.datatests.NavigationTests')
-data.setCell(0, 3, 7386);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'clickFooterLink_SubscribeBlog')
-data.setCell(1, 2, 'com.purebarre.www.datatests.NavigationTests')
-data.setCell(1, 3, 5416);
+data.setCell(0, 1, 'clickLink_MakeThisYourStudio')
+data.setCell(0, 2, 'com.purebarre.www.datatests.UtilityTests')
+data.setCell(0, 3, 8052);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -245,75 +248,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">32 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.purebarre.www.datatests.NavigationTests</span>
+              <span class="ignored-class-name">com.purebarre.www.datatests.UtilityTests</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">clickFooterLink_YouTube</span>
+                <span class="ignored-method-name">clickFindAStudio_Widget</span>
                 <br/>
-                <span class="ignored-method-name">clickFooterLink_SubscribeNewsletter_Text</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_Linkedin</span>
-                <br/>
-                <span class="ignored-method-name">clickHeaderLink_LocationsHeaderLink</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_ShippingInformation</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_GiftCards</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_Careers</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_Press</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_Pinterest</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_OwnerAndTeachersPortal</span>
-                <br/>
-                <span class="ignored-method-name">clickHeaderLink_NewToPureBarre</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_OrderInformation</span>
-                <br/>
-                <span class="ignored-method-name">clickHeaderLink_PureFoundations</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_StudioOwnersShop</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_PrivacyPolicy</span>
-                <br/>
-                <span class="ignored-method-name">clickHeaderLink_Story</span>
-                <br/>
-                <span class="ignored-method-name">clickHeaderLink_Blog</span>
-                <br/>
-                <span class="ignored-method-name">clickHeaderLink_SpecialtyClasses</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_PressImage</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_ReturnsAndExchanges</span>
-                <br/>
-                <span class="ignored-method-name">clickHeaderLink_AboutOurTechnique</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_SubscribeNewsletter_Submit</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_Instagram</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_StreamingContentFAQ</span>
-                <br/>
-                <span class="ignored-method-name">clickHeaderLink_Shop</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_DownloadForApple</span>
-                <br/>
-                <span class="ignored-method-name">clickHeaderLink_OwnAStudio</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_Team</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_DownloadForGoogle</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_ContactUs</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_Twitter</span>
-                <br/>
-                <span class="ignored-method-name">clickFooterLink_Facebook</span>
+                <span class="ignored-method-name">sendKeys_Zipcode</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -325,14 +268,12 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.purebarre.www.datatests.NavigationTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.purebarre.www.datatests.UtilityTests</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">clickFooterLink_SubscribeBlog</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickLink_MakeThisYourStudio</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickFooterLink_SubscribeBlog_Submit</span>
-                <span class="method-start">5419 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

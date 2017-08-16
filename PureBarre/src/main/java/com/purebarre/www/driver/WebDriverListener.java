@@ -13,6 +13,7 @@ public class WebDriverListener extends ParameterManager implements IInvokedMetho
 	ExtentReports report;
 	ExtentTest test;
 
+	@Override
 	public void beforeInvocation(final IInvokedMethod method, final ITestResult testResult) {
 		if (method.isTestMethod()) {
 			final String browser = method.getTestMethod().getXmlTest().getLocalParameters().get("browser");
@@ -22,10 +23,11 @@ public class WebDriverListener extends ParameterManager implements IInvokedMetho
 		}
 	}
 
+	@Override
 	public void afterInvocation(final IInvokedMethod method, final ITestResult testResult) {
 		final WebDriver driver = Manager.getDriver();
 		if (driver != null) {
-/*			driver.quit();*/
-		}
+/*			driver.quit();
+*/		}
 	}
 }

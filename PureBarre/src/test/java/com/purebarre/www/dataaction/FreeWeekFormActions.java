@@ -34,7 +34,7 @@ public class FreeWeekFormActions extends ParameterManager {
 
 	public void ReadData() throws IOException {
 		final WaitTypes wait = new WaitTypes(Manager.getDriver());
-		wait.waitForElement(FreeWeekObjects.button_FreeWeek(), 5);
+		wait.waitForElement_Clickable(FreeWeekObjects.button_FreeWeek(), 5);
 		FreeWeekObjects.button_FreeWeek().click();
 		final File src = new File(Constants.File);
 		final FileInputStream finput = new FileInputStream(src);

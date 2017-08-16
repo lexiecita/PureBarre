@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="com.purebarre.www.datatests.UtilityTests"/>
+    </classes>
+  </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="com.purebarre.www.datatests.FreeWeekTests">
+      <class name="com.purebarre.www.datatests.UtilityTests">
         <methods>
-          <include name="FreeWeekForm"/>
+          <include name="clicklink_CurrentLocation"/>
+          <include name="clickFindAStudio_Widget"/>
+          <include name="clickLink_MakeThisYourStudio"/>
+          <include name="sendKeys_Zipcode"/>
         </methods>
-      </class> <!-- com.purebarre.www.datatests.FreeWeekTests -->
+      </class> <!-- com.purebarre.www.datatests.UtilityTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
