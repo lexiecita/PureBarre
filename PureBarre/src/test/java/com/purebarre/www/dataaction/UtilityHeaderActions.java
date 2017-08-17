@@ -1,6 +1,5 @@
 package com.purebarre.www.dataaction;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.interactions.Actions;
 
 import com.purebarre.www.driver.Manager;
@@ -32,36 +31,51 @@ public class UtilityHeaderActions extends ParameterManager {
 		UtilityObjects.button_Search().click();
 	}
 	
+	public void clicklink_FindMoreStudios() {
+		WaitTypes wait = new WaitTypes(Manager.getDriver());
+		Actions actions = new Actions(Manager.getDriver());
+		wait.waitForElementWithPolling(UtilityObjects.link_FindMoreStudios(), 5);
+		actions.moveToElement(UtilityObjects.link_FindMoreStudios()).click().perform();
+	}
+	
+	public void clicklink_LocationResult(String location) {
+		WaitTypes wait = new WaitTypes(Manager.getDriver());
+		Actions actions = new Actions(Manager.getDriver());
+		wait.waitForElementWithPolling(UtilityObjects.link_MakeThisYourStudio(), 5);
+		actions.moveToElement(UtilityObjects.link_ResultLocation(location)).click().perform();
+	}
+	
 	public void clicklink_MakeThisYourStudio() {
 		WaitTypes wait = new WaitTypes(Manager.getDriver());
 		Actions actions = new Actions(Manager.getDriver());
 		UtilityObjects.button_Search().click();
-/*		wait.waitForElementWithPolling(UtilityObjects.link_MakeThisYourStudio(), 5);
-*/		JavascriptExecutor js = (JavascriptExecutor)Manager.getDriver();
-		String readystate = (String) js.executeScript("return document.readyState");
-		if (readystate.equalsIgnoreCase("complete")) {
-			System.out.println("it is complete");
-			wait.waitForElement_Clickable(UtilityObjects.link_MakeThisYourStudio(), 30);
-			UtilityObjects.link_MakeThisYourStudio().click();
-		}
-			
-		}
-	
+		wait.waitForElementWithPolling(UtilityObjects.link_MakeThisYourStudio(), 5);
+		actions.moveToElement(UtilityObjects.link_MakeThisYourStudio()).click().perform();
+	}
+	    
 	public void clicklink_CurrentLocation(String zipcode, String location ) {
 		WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement_Clickable(UtilityObjects.textbox_Zipcode(), 5);
 		UtilityObjects.text_MakeThisYourStudio_Result(location).click();
 	}
 	
-	public void clicklink_FindAClass(String zipcode, String location) {
+	public void clicklink_FindAClass() throws InterruptedException {
 		WaitTypes wait = new WaitTypes(Manager.getDriver());
-		wait.waitForElement_Clickable(UtilityObjects.textbox_Zipcode(), 5);
-		UtilityObjects.textbox_Zipcode().sendKeys(zipcode);
-		UtilityObjects.button_Search().click();
-		UtilityObjects.link_MakeThisYourStudio().click();
-		UtilityObjects.text_MakeThisYourStudio_Result(location).click();
+		wait.waitForElement_Clickable(UtilityObjects.link_FindAClass(), 5);
 		UtilityObjects.link_FindAClass().click();
-		Manager.getDriver().switchTo().window("Pure Barre - Fort Lauderdale");
+		Thread.sleep(2000);
+		for (String winHandle : Manager.getDriver().getWindowHandles()) {
+			Manager.getDriver().switchTo().window(winHandle);
 		}
 	}
-
+	
+	public void clicklink_StudioInfo_Address(String location) throws InterruptedException {
+		WaitTypes wait = new WaitTypes(Manager.getDriver());
+		Actions actions = new Actions(Manager.getDriver());
+		wait.waitForElement_Clickable(UtilityObjects.link_StudioInfo_Address(location), 5);
+		actions.moveToElement(UtilityObjects.link_StudioInfo_Address(location)).click().perform();
+		for (String winHandle : Manager.getDriver().getWindowHandles()) {
+			Manager.getDriver().switchTo().window(winHandle);
+		}
+	}
+}

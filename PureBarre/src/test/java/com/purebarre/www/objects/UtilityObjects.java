@@ -29,8 +29,18 @@ public class UtilityObjects {
 		return element;
 	}
 	
+	public static WebElement link_FindMoreStudios() {
+		element = Manager.getDriver().findElement(By.xpath("//a[contains(text(), 'Find More Studios')]"));
+		return element;
+	}
+	
 	public static WebElement text_CityResult() {
 		element = Manager.getDriver().findElement(By.xpath("//ul[@id='location-widget-studio-list']/li[1]/div[1]/a"));
+		return element;
+	}
+	
+	public static WebElement link_ResultLocation(String location) {
+		element = Manager.getDriver().findElement(By.xpath("//ul[@id='location-widget-studio-list']/li[1]/div[1]/a[contains(text(), " + location + ")]"));
 		return element;
 	}
 	
@@ -46,6 +56,11 @@ public class UtilityObjects {
 	
 	public static WebElement link_FindAClass() {
 		element = Manager.getDriver().findElement(By.xpath("//a[@id='find-a-class-option']"));
+		return element;
+	}
+	
+	public static WebElement link_StudioInfo_Address(String location) {
+		element = Manager.getDriver().findElement(By.xpath("//div[@id='studio-info']//div[contains(text(), " + location + ")]/following-sibling::a[1]"));
 		return element;
 	}
 }

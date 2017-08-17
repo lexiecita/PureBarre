@@ -9,7 +9,7 @@
     <parameter name="browser" value="Google Chrome"/>
     <groups>
       <run>
-        <include name="retest"/>
+        <include name="findaclass"/>
       </run>
     </groups>
     <classes>
@@ -20,13 +20,13 @@
     <parameter name="browser" value="Google Chrome"/>
     <groups>
       <run>
-        <include name="retest"/>
+        <include name="findaclass"/>
       </run>
     </groups>
     <classes>
       <class name="com.purebarre.www.datatests.UtilityTests">
         <methods>
-          <include name="clickLink_MakeThisYourStudio"/>
+          <include name="clicklink_StudioInfo_Address"/>
         </methods>
       </class> <!-- com.purebarre.www.datatests.UtilityTests -->
     </classes>

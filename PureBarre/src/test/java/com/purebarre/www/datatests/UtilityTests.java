@@ -37,7 +37,7 @@ public class UtilityTests {
 	}
 	
 	@Parameters({ "browser" })
-	@Test/*(groups = { "CityResult"})*/
+	@Test
 	public void sendKeys_Zipcode() throws IOException, InterruptedException {
 		report = new ExtentReports();
 		ua = new UtilityHeaderActions();
@@ -53,14 +53,51 @@ public class UtilityTests {
 	}
 	
 	@Parameters({ "browser" })
-	@Test(groups = {"retest"})
+	@Test
+	public void clicklink_FindMoreStudios() throws IOException, InterruptedException {
+		report = new ExtentReports();
+		ua = new UtilityHeaderActions();
+		ua.clickFindAStudio_Widget();
+		Thread.sleep(2000);
+		ua.clicklink_FindMoreStudios();
+		Thread.sleep(2000);
+		ExpectedURL = "locations";
+		ResultantURL = Manager.getDriver().getCurrentUrl();
+		if (ResultantURL.contains(ExpectedURL)) {
+			Assert.assertTrue(true);
+		} else {
+			Assert.assertTrue(false);
+		}
+	}
+	
+	@Parameters({ "browser" })
+	@Test
+	public void clickLink_LocationResult() throws IOException, InterruptedException {
+		report = new ExtentReports();
+		ua = new UtilityHeaderActions();
+		ua.clickFindAStudio_Widget();
+		ua.sendKeys_Zipcode("33301");
+		Thread.sleep(2000);
+		ua.clicklink_LocationResult("'Fort Lauderdale'");
+		Thread.sleep(2000);
+		ExpectedURL = "FL-ftlauderdale";
+		ResultantURL = Manager.getDriver().getCurrentUrl();
+		if (ResultantURL.contains(ExpectedURL)) {
+			Assert.assertTrue(true);
+		} else {
+			Assert.assertTrue(false);
+		}
+	}
+	
+	@Parameters({ "browser" })
+	@Test
 	public void clickLink_MakeThisYourStudio() throws IOException, InterruptedException {
 		report = new ExtentReports();
 		ua = new UtilityHeaderActions();
 		ua.clickFindAStudio_Widget();
 		ua.sendKeys_Zipcode("33301");
-/*		Thread.sleep(2000);
-*/		ua.clicklink_MakeThisYourStudio();
+		Thread.sleep(2000);
+		ua.clicklink_MakeThisYourStudio();
 		MakeThisYourStudioResult = "Fort Lauderdale";
 		if (UtilityObjects.text_MakeThisYourStudio_Result("Fort Lauderdale").isDisplayed()) {
 			Assert.assertTrue(true);
@@ -70,8 +107,8 @@ public class UtilityTests {
 	}
 	
 	@Parameters({ "browser" })
-/*	@Test(groups = {"retest"})
-*/	public void clicklink_CurrentLocation() throws IOException, InterruptedException {
+	@Test
+	public void clicklink_CurrentLocation() throws IOException, InterruptedException {
 		report = new ExtentReports();
 		ua = new UtilityHeaderActions();
 		ua.clickFindAStudio_Widget();
@@ -91,16 +128,39 @@ public class UtilityTests {
 	}
 	
 	@Parameters({ "browser" })
-/*	@Test(groups = {"retest"})
-*/	public void clicklink_FindAClass() throws IOException, InterruptedException {
+	@Test
+	public void clicklink_FindAClass() throws IOException, InterruptedException {
 		report = new ExtentReports();
 		ua = new UtilityHeaderActions();
 		ua.clickFindAStudio_Widget();
 		ua.sendKeys_Zipcode("33301");
 		Thread.sleep(2000);
 		ua.clicklink_MakeThisYourStudio();
+		Thread.sleep(2000);
+		ua.clicklink_FindAClass();
 		MakeThisYourStudioResult = "Fort Lauderdale";
-		ExpectedURL = "https://clients.mindbodyonline.com/classic/mainclass";
+		ExpectedURL = "https://clients.mindbodyonline.com";
+		ResultantURL = Manager.getDriver().getCurrentUrl();
+		if (ResultantURL.contains(ExpectedURL)) {
+			Assert.assertTrue(true);
+		} else {
+			Assert.assertTrue(false);
+		}
+	}
+	
+	@Parameters({ "browser" })
+	@Test(groups = { "findaclass"})
+	public void clicklink_StudioInfo_Address() throws IOException, InterruptedException {
+		report = new ExtentReports();
+		ua = new UtilityHeaderActions();
+		ua.clickFindAStudio_Widget();
+		ua.sendKeys_Zipcode("33301");
+		Thread.sleep(2000);
+		ua.clicklink_MakeThisYourStudio();
+		Thread.sleep(2000);
+		ua.clicklink_StudioInfo_Address("'Fort Lauderdale'");
+		MakeThisYourStudioResult = "Fort Lauderdale";
+		ExpectedURL = "www.google.com/";
 		ResultantURL = Manager.getDriver().getCurrentUrl();
 		if (ResultantURL.contains(ExpectedURL)) {
 			Assert.assertTrue(true);
