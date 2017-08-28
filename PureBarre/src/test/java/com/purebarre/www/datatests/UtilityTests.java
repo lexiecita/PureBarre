@@ -99,7 +99,7 @@ public class UtilityTests {
 		Thread.sleep(2000);
 		ua.clicklink_MakeThisYourStudio();
 		MakeThisYourStudioResult = "Fort Lauderdale";
-		if (UtilityObjects.text_MakeThisYourStudio_Result("Fort Lauderdale").isDisplayed()) {
+		if (UtilityObjects.text_MakeThisYourStudio_Result(MakeThisYourStudioResult).isDisplayed()) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
@@ -149,7 +149,7 @@ public class UtilityTests {
 	}
 	
 	@Parameters({ "browser" })
-	@Test(groups = { "findaclass"})
+	@Test
 	public void clicklink_StudioInfo_Address() throws IOException, InterruptedException {
 		report = new ExtentReports();
 		ua = new UtilityHeaderActions();
@@ -158,9 +158,51 @@ public class UtilityTests {
 		Thread.sleep(2000);
 		ua.clicklink_MakeThisYourStudio();
 		Thread.sleep(2000);
+		ua.clicklink_StudioInfo();
 		ua.clicklink_StudioInfo_Address("'Fort Lauderdale'");
-		MakeThisYourStudioResult = "Fort Lauderdale";
 		ExpectedURL = "www.google.com/";
+		ResultantURL = Manager.getDriver().getCurrentUrl();
+		if (ResultantURL.contains(ExpectedURL)) {
+			Assert.assertTrue(true);
+		} else {
+			Assert.assertTrue(false);
+		}
+	}
+	
+	@Parameters({ "browser" })
+	@Test
+	public void clicklink_StudioInfo_Email() throws IOException, InterruptedException {
+		report = new ExtentReports();
+		ua = new UtilityHeaderActions();
+		ua.clickFindAStudio_Widget();
+		ua.sendKeys_Zipcode("33301");
+		Thread.sleep(2000);
+		ua.clicklink_MakeThisYourStudio();
+		Thread.sleep(2000);
+		ua.clicklink_StudioInfo();
+		//TODO is this okay, to have it just check href?
+		String email = UtilityObjects.link_StudioInfo_Email("'ftlauderdale'").getAttribute("href");
+		if (email.contains("@purebarre.com")) {
+			Assert.assertTrue(true);
+		} else {
+			Assert.assertTrue(false);
+		}
+	}
+	
+	@Parameters({ "browser" })
+	@Test
+	public void clicklink_StudioInfo_ViewProfile() throws IOException, InterruptedException {
+		report = new ExtentReports();
+		ua = new UtilityHeaderActions();
+		ua.clickFindAStudio_Widget();
+		ua.sendKeys_Zipcode("33301");
+		Thread.sleep(2000);
+		ua.clicklink_MakeThisYourStudio();
+		Thread.sleep(2000);
+		ua.clicklink_StudioInfo();
+		Thread.sleep(2000);
+		ua.clicklink_StudioInfo_ViewProfile("fl-ftlauderdale");
+		ExpectedURL = "purebarre.com/fl-ftlauderdale";
 		ResultantURL = Manager.getDriver().getCurrentUrl();
 		if (ResultantURL.contains(ExpectedURL)) {
 			Assert.assertTrue(true);

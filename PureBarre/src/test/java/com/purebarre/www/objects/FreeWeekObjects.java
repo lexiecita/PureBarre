@@ -39,4 +39,30 @@ public class FreeWeekObjects {
 		element = Manager.getDriver().findElement(By.xpath("//input[@value='Try A Free Week']"));
 		return element;
 	}
+	
+	public static WebElement dropdown_FreeWeek_SelectState() {
+		element = Manager.getDriver().findElement(By.xpath("//div[@class='field']//select[@id='cat']"));
+		return element;
+	}
+	
+	public static WebElement dropdown_FreeWeek_SelectedState(String selectedstate) {
+		element = Manager.getDriver().findElement(By.xpath("//div[@class='field field--not-empty']/select/option[contains(text()," + selectedstate + ")]"));
+		return element;
+	}
+	
+	public static WebElement dropdown_FreeWeek_SelectStudio() {
+		element = Manager.getDriver().findElement(By.xpath("//div[@class='field']//select[@id='studio-select']"));
+		return element;
+	}
+	
+	public static WebElement dropdown_FreeWeek_SelectedStudio(String selectedstudio) {
+		element = Manager.getDriver().findElement(By.xpath("//select[@id='studio-select']/option[contains(text()," + selectedstudio + ")]"));
+		return element;
+	}
+	
+	public static WebElement getText_FieldNotEmpty() {
+		element = Manager.getDriver().findElement(By.xpath("//div[@class='flex-wrapper']/div[@class='field field--not-empty'][1]"));
+		return element;
+	}
+		
 }

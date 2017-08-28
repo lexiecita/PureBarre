@@ -44,7 +44,7 @@ public class HeaderObjects {
 	
 	public static WebElement link_Locations() {
 		element = Manager.getDriver()
-				.findElement(By.xpath("(//ul[@class='menu']//li[@id='menu-item-92']//a[text()='Locations'])[1]"));
+				.findElement(By.xpath("//li[@id='menu-item-92']/a[contains(text(), 'Locations')]"));
 		return element;
 	}
 

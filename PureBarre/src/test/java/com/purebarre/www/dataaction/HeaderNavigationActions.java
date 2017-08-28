@@ -26,14 +26,16 @@ public class HeaderNavigationActions extends ParameterManager {
 	}
 
 	public void clickLocations() throws IOException {
-		final WaitTypes wait = new WaitTypes(Manager.getDriver());
+		Actions actions = new Actions(Manager.getDriver());
+		WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement_Clickable(HeaderObjects.link_Locations(), 5);
-		HeaderObjects.link_Locations().click();
+		actions.moveToElement(HeaderObjects.link_Locations()).perform();
+		actions.moveToElement(HeaderObjects.link_Locations()).click().perform();
 	}
 
 	public void hoverclickNewToPureBarre() throws IOException {
-		final Actions actions = new Actions(Manager.getDriver());
-		final WaitTypes wait = new WaitTypes(Manager.getDriver());
+		Actions actions = new Actions(Manager.getDriver());
+		WaitTypes wait = new WaitTypes(Manager.getDriver());
 		wait.waitForElement_Clickable(HeaderObjects.link_TheExperience(), 5);
 		actions.moveToElement(HeaderObjects.link_TheExperience()).perform();
 		actions.moveToElement(HeaderObjects.link_NewToPureBarre()).click().perform();

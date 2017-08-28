@@ -59,8 +59,23 @@ public class UtilityObjects {
 		return element;
 	}
 	
+	public static WebElement link_StudioInfo() {
+		element = Manager.getDriver().findElement(By.xpath("//div[@id='studio-info']"));
+		return element;
+	}
+	
 	public static WebElement link_StudioInfo_Address(String location) {
 		element = Manager.getDriver().findElement(By.xpath("//div[@id='studio-info']//div[contains(text(), " + location + ")]/following-sibling::a[1]"));
+		return element;
+	}
+	
+	public static WebElement link_StudioInfo_Email(String email) {
+		element = Manager.getDriver().findElement(By.xpath("//div[@class='location-widget-dropdown-studio-info-meta']//a[contains(text(), " + email + ")]"));
+		return element;
+	}
+	
+	public static WebElement link_StudioInfo_ViewProfile(String location) {
+		element = Manager.getDriver().findElement(By.xpath("//div[@id='studio-info']/div[3]/a[2]"));
 		return element;
 	}
 }

@@ -69,6 +69,13 @@ public class UtilityHeaderActions extends ParameterManager {
 		}
 	}
 	
+	public void clicklink_StudioInfo() throws InterruptedException {
+		WaitTypes wait = new WaitTypes(Manager.getDriver());
+		Actions actions = new Actions(Manager.getDriver());
+		wait.waitForElement_Clickable(UtilityObjects.link_StudioInfo(), 5);
+		actions.moveToElement(UtilityObjects.link_StudioInfo()).click().perform();
+	}
+	
 	public void clicklink_StudioInfo_Address(String location) throws InterruptedException {
 		WaitTypes wait = new WaitTypes(Manager.getDriver());
 		Actions actions = new Actions(Manager.getDriver());
@@ -77,5 +84,22 @@ public class UtilityHeaderActions extends ParameterManager {
 		for (String winHandle : Manager.getDriver().getWindowHandles()) {
 			Manager.getDriver().switchTo().window(winHandle);
 		}
+	}
+	
+	public void clicklink_StudioInfo_Email(String email) throws InterruptedException {
+		WaitTypes wait = new WaitTypes(Manager.getDriver());
+		Actions actions = new Actions(Manager.getDriver());
+		wait.waitForElement_Clickable(UtilityObjects.link_StudioInfo_Email(email), 5);
+		actions.moveToElement(UtilityObjects.link_StudioInfo_Email(email)).click().perform();
+		for (String winHandle : Manager.getDriver().getWindowHandles()) {
+			Manager.getDriver().switchTo().window(winHandle);
+		}
+	}
+	
+	public void clicklink_StudioInfo_ViewProfile(String location) throws InterruptedException {
+		WaitTypes wait = new WaitTypes(Manager.getDriver());
+		Actions actions = new Actions(Manager.getDriver());
+		wait.waitForElement_Clickable(UtilityObjects.link_StudioInfo_ViewProfile(location), 5);
+		actions.moveToElement(UtilityObjects.link_StudioInfo_ViewProfile(location)).click().perform();
 	}
 }

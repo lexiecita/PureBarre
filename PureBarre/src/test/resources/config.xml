@@ -8,11 +8,11 @@
 		<parameter name="browser" value="Google Chrome"/>
 		<groups>
 			<run>
-				<include name="findaclass"/>
+				<include name="test"/>
 			</run>
 		</groups>
 		<classes>
-			<class name="com.purebarre.www.datatests.UtilityTests"></class>
+			<class name="com.purebarre.www.datatests.IndividualLocationsTests"></class>
 		</classes>
 	</test>
 </suite>
