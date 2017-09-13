@@ -1,9 +1,12 @@
 package com.purebarre.www.driver;
 
+import com.purebarre.www.extentreports.ExtentManager;
+import com.relevantcodes.extentreports.ExtentReports;
+
 public class ParameterManager {
 	private String browser, username, password, URL, testStep, template;
-/*	private ExtentReports extent = ExtentManager.getInstance();
-*/
+	public ExtentReports extent = ExtentManager.getInstance();
+
 	public String getBrowser() {
 		return browser;
 	}
@@ -36,9 +39,13 @@ public class ParameterManager {
 		this.URL = URL;
 	}
 
-/*	public ExtentReports getExtentReports() {
+	public ExtentReports getExtentReports() {
 		return extent;
-	}*/
+	}
+	
+	public void setExtentReports(ExtentReports extent) {
+		this.extent = extent;
+	}
 
 	public String getTestStep() {
 		return testStep;

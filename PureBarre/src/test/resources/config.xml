@@ -8,11 +8,12 @@
 		<parameter name="browser" value="Google Chrome"/>
 		<groups>
 			<run>
-				<include name="test"/>
+				<include name="next"/>
 			</run>
 		</groups>
 		<classes>
 			<class name="com.purebarre.www.datatests.IndividualLocationsTests"></class>
+			<class name="com.purebarre.www.extentreports.TearDown" />
 		</classes>
 	</test>
 </suite>

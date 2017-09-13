@@ -17,15 +17,15 @@ public class WaitTypes {
 		this.driver = driver;
 	}
 
-	public void waitForElement_Clickable(WebElement webElement, int timeout) {
+	public void waitForElement_Clickable(WebElement element, int timeout) {
 		try {
 			System.out.println("Waiting for: " + timeout + " seconds for element to be available");
 			//this time unit is always seconds
 			WebDriverWait wait = new WebDriverWait(driver, timeout);
-			wait.until(ExpectedConditions.elementToBeClickable(webElement));
-			System.out.println("Element" + webElement + " appears on the web page");
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+			System.out.println("Element" + element + " appears on the web page");
 		} catch (Exception e) {
-			System.out.println("Element" + webElement + "  did not appear on webpage");
+			System.out.println("Element" + element + "  did not appear on webpage");
 		}
 	}
 	

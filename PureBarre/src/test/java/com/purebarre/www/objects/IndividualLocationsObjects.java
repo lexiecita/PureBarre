@@ -90,31 +90,16 @@ public class IndividualLocationsObjects {
 	}
 	
 	//TODO make contents of dropdown array
-	public static WebElement dropdown_ScheduleWidget_AllClasses() {
-		element = Manager.getDriver().findElement(By.xpath("//select[@id='mbo_class']//option[contains(text(), 'All Classes')]"));
+	public static WebElement dropdown_ScheduleWidget_AllClasses(String selectedClass) {
+		element = Manager.getDriver().findElement(By.xpath("//select[@id='mbo_class']//option[contains(text(), " + selectedClass + ")]"));
 		return element;
 	}
-	
-	public static WebElement dropdown_ScheduleWidget_Empower() {
-		element = Manager.getDriver().findElement(By.xpath("//select[@id='mbo_class']//option[contains(text(), 'Empower')]"));
+		
+	public static WebElement text_ScheduleWidget_AllClasses(String selectedClass) {
+		element = Manager.getDriver().findElement(By.xpath("//select[@id='mbo_class']//option[contains(text(), " + selectedClass + ")]"));
 		return element;
 	}
-	
-	public static WebElement text_ScheduleWidget_Empower() {
-		element = Manager.getDriver().findElement(By.xpath("//span[@id='item_39684_mbo_class']//a[contains(text(), 'Empower')]"));
-		return element;
-	}
-	
-	public static WebElement dropdown_ScheduleWidget_PureBarre() {
-		element = Manager.getDriver().findElement(By.xpath("//select[@id='mbo_class']//option[contains(text(), 'Pure Barre')][1]"));
-		return element;
-	}
-	
-	public static WebElement text_ScheduleWidget_PureBarre() {
-		element = Manager.getDriver().findElement(By.xpath("//span[@id='item_35621_mbo_class']//a[contains(text(), 'Pure Barre')]"));
-		return element;
-	}
-
+		
 	public static WebElement dropdown_ScheduleWidget_Instructor() {
 		element = Manager.getDriver().findElement(By.xpath("//select[@id='trainer']"));
 		return element;
@@ -145,8 +130,8 @@ public class IndividualLocationsObjects {
 		return element;
 	}
 		
-	public static WebElement button_ScheduleWidget_PrevTodayNext(String prevtodaynext) {
-		element = Manager.getDriver().findElement(By.xpath("//div[@class='date_links']//a[contains(text(), " + prevtodaynext + ")]"));
+	public static WebElement button_ScheduleWidget_Today() {
+		element = Manager.getDriver().findElement(By.xpath("//div[@class='date_links']//a[contains(text(), 'Today')]"));
 		//TODO make an array for each button in actions?
 		return element;
 	}
@@ -156,8 +141,28 @@ public class IndividualLocationsObjects {
 		return element;
 	}
 	
+	public static WebElement text_Month() {
+		element = Manager.getDriver().findElement(By.xpath("//div[@class='hc-pignose-calendar-top-date']/p"));
+		return element;
+	}
+	
+	public static WebElement link_PreviousMonth() {
+		element = Manager.getDriver().findElement(By.xpath("//a[@class='hc-pignose-calendar-top-nav hc-pignose-calendar-top-prev']//span[@class='hc-pignose-calendar-top-value']"));
+		return element;
+	}
+	
+	public static WebElement link_NextMonth() {
+		element = Manager.getDriver().findElement(By.xpath("//a[@class='hc-pignose-calendar-top-nav hc-pignose-calendar-top-next']//span[@class='hc-pignose-calendar-top-value']"));
+		return element;
+	}
+	
 	public static WebElement calendar_ScheduleWidget_PreviousWeek() {
 		element = Manager.getDriver().findElement(By.xpath("//span[@class='week_links']//a[contains(text(), 'Previous')]"));
+		return element;
+	}
+	
+	public static WebElement calendar_ScheduleWidget_NextWeek() {
+		element = Manager.getDriver().findElement(By.xpath("//span[@class='week_links']//a[contains(text(), 'Next')]"));
 		return element;
 	}
 	

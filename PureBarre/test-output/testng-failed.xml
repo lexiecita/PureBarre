@@ -9,26 +9,12 @@
     <parameter name="browser" value="Google Chrome"/>
     <groups>
       <run>
-        <include name="test"/>
+        <include name="next"/>
       </run>
     </groups>
     <classes>
       <class name="com.purebarre.www.datatests.IndividualLocationsTests"/>
+      <class name="com.purebarre.www.extentreports.TearDown"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <parameter name="browser" value="Google Chrome"/>
-    <groups>
-      <run>
-        <include name="test"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="com.purebarre.www.datatests.IndividualLocationsTests">
-        <methods>
-          <include name="clickButton_PreviousWeek"/>
-        </methods>
-      </class> <!-- com.purebarre.www.datatests.IndividualLocationsTests -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

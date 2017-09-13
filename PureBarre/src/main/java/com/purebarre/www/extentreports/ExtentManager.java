@@ -1,19 +1,16 @@
 package com.purebarre.www.extentreports;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.purebarre.www.driver.Constants;
+import com.relevantcodes.extentreports.ExtentReports;
 
 public class ExtentManager {
 
-	private static ExtentHtmlReporter extentReport;
-	private static String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+	private static ExtentReports extent;
 
-	public static ExtentHtmlReporter getInstance() {
-		if (extentReport == null) {
-			extentReport = new ExtentHtmlReporter("../PureBarre/test-output/Reports/TestResults " + timeStamp + ".html");
+	public static ExtentReports getInstance() {
+		if (extent == null) {
+            extent = new ExtentReports("../PureBarre/test-output/Reports/TestResults " + Constants.timeStamp + ".html", true);
 		}
-		return extentReport;
+		return extent;
 	}
 }
