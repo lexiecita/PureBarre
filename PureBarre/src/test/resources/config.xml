@@ -12,7 +12,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="com.purebarre.www.datatests.IndividualLocationsTests"></class>
+			<class name="com.purebarre.www.datat ests.IndividualLocationsTests"></class>
 			<class name="com.purebarre.www.extentreports.TearDown" />
 		</classes>
 	</test>
